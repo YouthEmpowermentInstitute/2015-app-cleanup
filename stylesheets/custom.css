@@ -1,0 +1,14 @@
+.center-img {
+	text-align:center;
+}
+
+.noelipsis {
+    text-overflow: initial !important;
+    overflow: visible !important;
+    white-space: normal !important;
+}
+
+/*These make the text in listviews and collapsible
+toggles wrap instead of generating elipsis*/
+h3 .ui-btn{white-space:normal !important;}
+li .ui-btn{white-space:normal !important;}
