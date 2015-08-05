@@ -6,14 +6,15 @@
 <link rel="stylesheet" href="stylesheets/style.css" />
 <link rel="stylesheet" href="stylesheets/custom.css" />
 <script src="scripts/jquery-core.js"></script>
-<script src="scripts/jquery-mobile.js"></script>   </head>
+<script src="scripts/jquery-mobile.js"></script>
+</head>
         
 <body>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 					                       <!--Health: health-homepage --> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 	<div data-role="page" id="health-homepage">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<h1>Healthy Eating</h1>
 		<a data-rel="back" data-icon="back">Back</a>
 		<a href="#health-homepage" data-icon="home">Home</a>
@@ -23,7 +24,7 @@
 	
 		 <div class="ui-body ui-body-a ui-corner-all">    
 		 <div style="text-align:center;">
-			<img SRC="pics/eatmorefruit.gif" ALT="eat fruit!" WIDTH="260" height="200">
+			<img SRC="BREKAKics/eatmorefruit.gif" ALT="eat fruit!" WIDTH="260" height="200">
 			<p>Eating healthy is important because it can improve your abilities and open doors to things you cant do, also eating nutritious foods feed the brain and can make your body function properly. The main reason you should eat healthy is because it can prevent you from having ilnnesses like, cancer and heart disease. It can also improve your overall health to lead a healthy lfestyle. </p>
 		</div>
 		<ul data-role="listview" data-insert="true" data-theme="a">
@@ -42,7 +43,7 @@
 					                       <!--Health: general-health --> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="general-health">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<h1> General Health </h1>
 		<a data-rel="back" data-icon="back">Back</a>
 		<a href="#health-homepage" data-icon="home">Home</a>
@@ -63,7 +64,7 @@
 	</div>
 
 <div data-role="collapsibleset">
-<div id="question1-generalhealth">
+
 	<div data-role="collapsible">
 	  <h3> Why is healthy eating important? </h3>
       <ul data-role="listview" data-inset="true">
@@ -114,9 +115,9 @@
 		<div class="ui-block-c"></div>
 		</div>
 		</div>
-</div><!--/Question 1-->
+<!--/Question 1-->
       
-<div id="question2-generalhealth">
+
     <div data-role="collapsible">
       <h3> What is the difference between organic & non-organic? </h3>
 				<ul data-role="listview" data-inset="true">
@@ -168,9 +169,9 @@
 		</div>
 		</div>
 
-</div><!--/Question 2-->
+<!--/Question 2-->
 
-<div id="question3-generalhealth">
+
 <div data-role="collapsible">
 <h3> What is the daily water in take for the average person? </h3>
      	<ul data-role="listview" data-inset="true">
@@ -220,9 +221,9 @@
 <div class="ui-block-c"></div>
 </div>
 </div>
-</div><!--/Question 3-->
+<!--/Question 3-->
 
-<div id="question4-generalhealth">
+
 <div data-role="collapsible">
 				<h3> How does nutritious food impact health? </h3>
 		<ul data-role="listview" data-inset="true">
@@ -273,9 +274,9 @@
 </div>
 </div>
 
-</div><!--/Question 4-->
+<!--/Question 4-->
 
-<div id="question5-generalhealth">
+
 		        <div data-role="collapsible">
 				<h3> Are all sugars bad? </h3>
 		<ul data-role="listview" data-inset="true">	
@@ -288,7 +289,7 @@
        
        <div data-role="popup" id="GAq5a1" class="ui-content">
 <h3> That is Incorrect </h3>
-<p> Not all sugars are harmful /p>
+<p> Not all sugars are harmful</p>
 <div class="ui-grid-b">
 <div class="ui-block-a"></div>
 <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
@@ -326,9 +327,9 @@
 </div>
 </div>
 
-</div><!--/Question 5-->
+<!--/Question 5-->
 		
-<div id="question6-generalhealth">
+
                 <div data-role="collapsible">
           		<h3> Are all fats bad? </h3>
         <ul data-role="listview" data-inset="true">
@@ -379,9 +380,9 @@
 </div>
 </div>
 
-</div><!--/Question 6-->
+<!--/Question 6-->
 		
-<div id="question7-generalhealth">
+
 		<div data-role="collapsible">
 		<h3> Which two below are not an essential nutrient?</h3>
 		<ul data-role="listview" data-inset="true">
@@ -465,9 +466,9 @@
 </div>
 </div>
 		
-</div><!--/Question 7-->
+<!--/Question 7-->
 
-<div id="question8-generalhealth">
+
          <div data-role="collapsible">
          <h3> Why are some people gluten free and what is it? </h3>
          <ul data-role="listview" data-inset="true">
@@ -529,9 +530,9 @@
 </div>
 </div>
 
-</div><!--/Question 8-->
+<!--/Question 8-->
 
-<div id="question9-generalhealth">
+
 		<div data-role="collapsible">
 		 <h3> What effects do GMO have on the body? </h3>
 		 <ul data-role="listview" data-inset="true">
@@ -542,12 +543,12 @@
 		</ul>
 	</div>
 		
-		 <div data-role="popup" id="GAq9a1" class="ui-content">
+<div data-role="popup" id="GAq9a1" class="ui-content">
 <h3> That is Incorrect</h3>
-<p> It actually dose the opposite </p>
+<p>It actually dose the opposite</p>
 <div class="ui-grid-b">
 <div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 <div class="ui-block-c"></div>
 </div>
 </div>
@@ -582,10 +583,10 @@
 </div>
 </div>
 		
-</div><!--/Question 9-->
+<!--/Question 9-->
 		
 		
-<div id="question10-generalhealth">
+
 		<div data-role="collapsible">
 		<h3> Explain the difference between Vegetarian & Pescatarian </h3>
 		<ul data-role="listview" data-inset="true">
@@ -636,9 +637,9 @@
 </div>
 </div>
 	    
-</div><!--/Question 10-->
+<!--/Question 10-->
 	    
-<div id="question11-generalhealth">
+
 	    <div data-role="collapsible">
 	    <h3> How can I overcome barriers of eating healthy? </h3>
 	    
@@ -694,7 +695,7 @@
 </div>
 </div>
 
-</div><!--/Question 11-->
+<!--/Question 11-->
 </div><!--/Accordion -->
 </div>
 </div><!--/Genderal Health Page-->
@@ -703,7 +704,7 @@
 					                       <!--Health: womens-health --> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="womens-health">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<h1>Women's Health</h1>
 		<a data-rel="back" data-icon="back">Back</a>
 		<a href="#health-homepage" data-icon="home">Home</a>
@@ -970,7 +971,7 @@
 					                       <!--Health: mens-health --> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="mens-health">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<h1> Men's Health</h1>
 		<a data-rel="back" data-icon="back">Back</a>
 		<a href="#health-homepage" data-icon="home">Home</a>
@@ -988,7 +989,7 @@
 <!--Health Questions Start-->
 <div data-role="collapsibleset">
 			
-<div id="men-health-q1">
+
 			<div data-role="collapsible" >
 
 				<h3>How many servings of fruits and vegetables should males eat on a daily basis? </h3>
@@ -1040,12 +1041,9 @@
 			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
 			<div class="ui-block-c"></div>
 		</div>
-	</div>
+	</div><!--END QUESTION 1-->
 
-			
-</div><!--END QUESTION 1-->
 
-<div id="men-health-q2">
 			<div data-role="collapsible">
 				<h3> Which of the following are not included as part of the "5 a day"?</h3>
 				<ul data-role="listview" data-icon="false">
@@ -1094,11 +1092,9 @@
 			          <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
 			          <div class="ui-block-c"></div>
 		          </div>
-	              </div>
-			
-</div><!-- End of question 2 pop ups -->			
+	              </div><!-- End of question 2 pop ups -->			
 
-<div id="men-health-q3">
+
 			<div data-role="collapsible">
 				<h3> What percentage of daily calories should males be receiving from protein?  </h3>
 					<ul data-role="listview" data-icon="false">
@@ -1149,11 +1145,9 @@
 			          <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
 			          <div class="ui-block-c"></div>
 		          </div>
-	              </div>
+	        </div><!-- end of question 3 pop ups -->
 
-</div><!-- end of question 3 pop ups -->
 
-<div id="men-health-q4">
 			<div data-role="collapsible">
 				<h3> Which is not true for a male to stay healthy? </h3>
 					<ul data-role="listview" data-icon="false">
@@ -1202,11 +1196,9 @@
 			          <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
 			          <div class="ui-block-c"></div>
 		          </div>
-	              </div>
+	              </div><!-- end of question 4  -->
 
-</div><!-- end of question 4  -->
 
-<div id="men-health-q5">
 			<div data-role="collapsible">
 				<h3> What should you avoid eating the most of? </h3>
 					<ul data-role="listview" data-icon="false">
@@ -1260,9 +1252,7 @@
 			          <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
 			          <div class="ui-block-c"></div>
 		          </div>
-	              </div>
-
-</div><!-- end of question 5 pop ups -->
+	              </div><!-- end of question 5 pop ups -->
 </div><!--/Accordion-->
 	
 
@@ -1278,7 +1268,7 @@
 					                       <!--Health: kids-health --> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="kids-health">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<h1>Growing Kids Health</h1>
 		<a data-rel="back" data-icon="back">Back</a>
 		<a href="#health-homepage" data-icon="home">Home</a>
@@ -1330,10 +1320,10 @@
 			<div data-role="collapsible">
 			<h3>When eating healthy, you should...</h3>
 				<ul data-role="listview" data-icon="false">
-					<li><a href="#KHq4a1" data-rel="popup" data-transition="flow">A. eat a lot of sugar</a></li>
-					<li><a href="#KHq4a2" data-rel="popup" data-transition="flow">B. skip meals</a></li>
-					<li><a href="#KHq4a3" data-rel="popup" data-transition="flow">C. eat quickly</a></li>
-					<li><a href="#KHq4a4" data-rel="popup" data-transition="flow">D. not skip meals</a></li>
+					<li><a href="#KHq4a1" data-rel="popup" data-transition="flow">A. Eat a lot of sugar</a></li>
+					<li><a href="#KHq4a2" data-rel="popup" data-transition="flow">B. Skip meals</a></li>
+					<li><a href="#KHq4a3" data-rel="popup" data-transition="flow">C. Eat quickly</a></li>
+					<li><a href="#KHq4a4" data-rel="popup" data-transition="flow">D. Not skip meals</a></li>
 				</ul>
 			</div><!---/Question 4-->
 
@@ -1570,7 +1560,7 @@
 					                       <!--Health: tips --> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="tips">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<h1>Tips For You</h1>
 		<a data-rel="back" data-icon="back">Back</a>
 		<a href="#health-homepage" data-icon="home">Home</a>
