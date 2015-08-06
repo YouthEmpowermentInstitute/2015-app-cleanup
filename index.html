@@ -1661,13 +1661,32 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 </div><!--/Ethical Homepage-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-																		<!--Ethical Consumptio-->
+																		<!--Ethical Resources-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div data-role="page" id="ec-resources">
+	<div data-role="header">
+	<h1>Resources</h1>
+			<a data-rel="back" data-icon="back">Back</a>
+			<a href="#app-homepage" data-icon="home">Home</a>
+	</div>
+<div data-role="content">
+   	<ul data-role="listview" data-icon="false">
+   		<li> <a href="http://ethicalconsumption.org/publications/ethical-consumption-mean/">What is ethical consumption</a></li>
+   		<li> <a href="http://ethicalconsumption.org/"> Ethical Consumption in Australia</a></li>
+   		<li> <a href="http://www.developmenteducation.ie/issues-and-topics/ethical-consumption/">Exploring ethical consumption</a></li>
+   		<li> <a href="http://www.takepart.com/">Take Part</a></li>
+		<li> <a href="http://www.eschooltoday.com/">eSchool</a></li>
+   	</ul>
+</div>
+</div><!--/Resources-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																		<!--Ethical Consumption-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="ethical-consumption">
 	<div data-role="header">
 		<h1>Ethical Consumption</h1>
 		<a data-rel="back" data-icon="back">Back</a>
-		<a href="#ec-homepage" data-icon="home">Home</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
 	
 <div data-role="content">
@@ -1732,7 +1751,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 	<div data-role="header">
 		<h1>Environment</h1>
 		<a data-rel="back" data-icon="back">Back</a>
-		<a href="#ec-homepage" data-icon="home">Home</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
 	
 <div data-role="content">
@@ -1958,7 +1977,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 		<h1>Animal Abuse</h1>
 
 		<a data-rel="back" data-icon="back">Back</a>
-		<a href="#ec-homepage" data-icon="home">Home</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
 <!-- Question 1 --> 
 		<div data-role="collapsibleset">
@@ -2167,38 +2186,89 @@ For the record, there are 158 divs with the data-role="popup"-->
 	<div data-role="header">
 		<h1>Organic Food</h1>
 		<a data-rel="back" data-icon="back">Back</a>
-		<a href="#ec-homepage" data-icon="home">Home</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
 	
 <div data-role="content">
 <div data-role="collapsibleset" >
 	
-	<div data-role="collapsible" >	
-		<h3>how many foods are genetically modified?</h3>
-				<ul data-role="listview" data-icon="false">
-					<li><a href="#1f1" data-rel="popup" data-transition="flip">fruits arnt genetically modified</a></li>
-					<li><a href="#1t1" data-rel="popup" data-transition="flip">are wheats, grain, corn, other fruits and vegstibals genetically modified</a></li>
-					<li><a href="#1f2" data-rel="popup" data-transition="flip">fish cant be genetically modified</a></li>
-					<li><a href="#1f3" data-rel="popup" data-transition="flip">all vitamins are organic</a></li>
-				</ul>
+		<div data-role="collapsible" >	
+			<h3>How many foods are genetically modified?</h3>
+					<ul data-role="listview" data-icon="false">
+						<li><a href="#1f1" data-rel="popup" data-transition="flip">fruits arnt genetically modified</a></li>
+						<li><a href="#1t1" data-rel="popup" data-transition="flip">are wheats, grain, corn, other fruits and vegstibals genetically modified</a></li>
+						<li><a href="#1f2" data-rel="popup" data-transition="flip">fish cant be genetically modified</a></li>
+						<li><a href="#1f3" data-rel="popup" data-transition="flip">all vitamins are organic</a></li>
+					</ul>
 			</div>
 		
 			<!--start QUESTION 3 ethical consumption-GMOs (GMOs) - Which of the following answers is a  real genetically modified fruit or animal? - DONE BY jojo-->
 			<div data-role="collapsible" >
-		<h3>Which of the following answers is a  real genetically modified fruit or animal?</h3>
-
-			<ul data-role="listview" data-icon="false">
-					<li><a href="#3false1" data-rel="popup" data-transition="flip">Tomato with fish genes </a></li>
-					<li><a href="#3false2" data-rel="popup" data-transition="flip">Goat with spider genes</a></li>
-					<li><a href="#3false3" data-rel="popup" data-transition="flip">Pig with spinach genes</a></li>
-					<li><a href="#3true1" data-rel="popup" data-transition="flip">All of the above</a></li>
+				<h3>Which of the following answers is a  real genetically modified fruit or animal?</h3>
+					<ul data-role="listview" data-icon="false">
+							<li><a href="#3false1" data-rel="popup" data-transition="flip">Tomato with fish genes </a></li>
+							<li><a href="#3false2" data-rel="popup" data-transition="flip">Goat with spider genes</a></li>
+							<li><a href="#3false3" data-rel="popup" data-transition="flip">Pig with spinach genes</a></li>
+							<li><a href="#3true1" data-rel="popup" data-transition="flip">All of the above</a></li>
+						</ul>
+			</div>
+			
+		<div data-role="collapsible">
+			<h3>What describes organic food? Choose one of the following. </h3>
+				<ul data-role="listview" data-icon="false">
+					<li><a href="#OFf1" data-rel="popup" data-transition="flip">Food that is grown without any added pestisides or </a></li>
+					<li><a href="#OFf2" data-rel="popup" data-transition="flip">The method of using chemical fertilizers,pestisides or any other chemical element.</a></li>
+					<li><a href="#OFt" data-rel="popup" data-transition="flip"> Produce and livestock produced and produced that may use non-harmful chemicals or pesticides</a></li>
+					<li><a href="#OFf3" data-rel="popup" data-transition="flip"> The non-use of of pestisides,fertilizers or any other chemical. </a></li>
 				</ul>
-					</div>			
+			</div>
+		
+		
 			
 			
 </div>
 
 <!--Popups for organic food-->
+
+	<div data-role="popup" id="OFf1" class="ui-content">
+		<h3>That's incorrect!</h3>
+		<p>Organic food can actually have non-synthetic pesticides </p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>
+		</div>
+		
+	<div data-role="popup" id="OFf2" class="ui-content">
+		<h3>That's false</h3>
+		<p>To be considered organic the foods cannot have synthetically produced chemicals other than those specifically allowed</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>
+		</div>
+		
+	<div data-role="popup" id="OFt" class="ui-content">
+		<h3>That's correct!</h3>
+		<p>Organic foods can have been treated with natural (non-synthetic) chemicals other than those specifically prohibited</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>
+		</div>
+		
+	<div data-role="popup" id="OFf3" class="ui-content">
+		<h3>That's incorrect!</h3>
+		<p>As long as the pesticides or fertilizers are natural they can be used</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>
+		</div>
 <!--POPUPS FOR question how many are GMO-->			
 	<div data-role="popup" id="1f1" class="ui-content">
 		<h3>Actually, That's false</h3>
