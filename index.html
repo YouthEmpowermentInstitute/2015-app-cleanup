@@ -7,17 +7,6 @@
 	<link rel="stylesheet" href="stylesheets/custom.css" />
 	<script src="scripts/jquery-core.js"></script>
 	<script src="scripts/jquery-mobile.js"></script>
-<!--I wanted to have the popups appear a bit more neat, so after the first commit of this index,
-I used the regex string below. I'm pretty sure it will handle every case. You can always revert to the first commit
-For the record, there are 158 divs with the data-role="popup"-->
-<!--The string-->
-<!--
-[^<]*(<div\sdata-role="popup"\sid="[^"]*"\sclass="ui-content">\n)[^<]*(<h3>[^<]*</h3>\r)[^<]*(<p>[^<]*</p>\r)[^<]*(<div\sclass="ui-grid-b">\r)[^<]*(<div\sclass="ui-block-a"></div>\r)[^<]*(<div\sclass="ui-block-b"><a\shref="#"\sclass="ui-btn\sui-corner-all\sui-shadow"\sdata-rel="back">[^>]*</a></div>\r)[^<]*(<div\sclass="ui-block-c"></div>\r)[^<]*(</div>\r)[^<]*(</div>\r)
--->
-<!--The Replacement Patter-->
-<!--
-\t\t\1\t\t\t\2\t\t\t\3\t\t\t\t\4\t\t\t\t\t\5\t\t\t\t\t\6\t\t\t\t\t\7\t\t\t\t\8\t\t\9\r
--->
 </head>
 <body>
 <div data-role="page" id="app-homepage">	  
@@ -31,39 +20,39 @@ For the record, there are 158 divs with the data-role="popup"-->
 </div><!--/Content-->
 </div><!--/App Homepage-->
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-																		<!--HELALTH SECTION-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+								<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																										<!--HELALTH SECTION-->
+								<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 					                       <!--Health: Health Homepage --> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-	<div data-role="page" id="health-homepage">
-	<div data-role="header" data-position="fixed">
-		<h1>Healthy Eating</h1>
-		<a data-rel="back" data-icon="back">Back</a>
-		<a href="#app-homepage" data-icon="home">Home</a>
-	</div>
+<div data-role="page" id="health-homepage">
+<div data-role="header" data-position="fixed">
+	<h1>Healthy Eating</h1>
+	<a data-rel="back" data-icon="back">Back</a>
+	<a href="#app-homepage" data-icon="home">Home</a>
+</div>
 	  
-		<div data-role="content">
+<div data-role="content">
 	
-		 <div class="ui-body ui-body-a ui-corner-all">    
-		 <div style="text-align:center;">
+		<div class="ui-body ui-body-a ui-corner-all">    
+		<div style="text-align:center;">
 			<img SRC="BREKAKics/eatmorefruit.gif" ALT="eat fruit!" WIDTH="260" height="200">
-			<p>Eating healthy is important because it can improve your abilities and open doors to things you cant do, also eating nutritious foods feed the brain and can make your body function properly. The main reason you should eat healthy is because it can prevent you from having ilnnesses like, cancer and heart disease. It can also improve your overall health to lead a healthy lfestyle. </p>
+			<p>Eating healthy is important because it can improve your abilities and open doors to things you can't do. Also eating nutritious foods feed the brain and can make your body function properly. The main reason you should eat healthy is because it can prevent you from having illnesses like cancer and heart disease. It can also improve your overall health to lead a healthy lifestyle.</p>
 		</div>
-		<ul data-role="listview" data-insert="true" data-theme="a">
+		<ul data-role="listview" data-inset="true" data-theme="a">
 		 <li><a href="#general-health" class="ui-btn">General Health</a></li>
 		 <li><a href="#womens-health" class="ui-btn">Womens Health</a></li>
 		 <li><a href="#mens-health" class="ui-btn">Mens Health</a></li>
 		 <li><a href="#kids-health" class="ui-btn">Kids Health</a></li>
 		 <li><a href="#tips" class="ui-btn">Tips</a></li>
 		</ul>
-
 	</div>
-	</div>
+	
+</div><!--/content div-->
 </div><!--/Health Homepage-->
 	  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -71,7 +60,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="general-health">
 	<div data-role="header" data-position="fixed">
-		<h1> General Health </h1>
+		<h1>General Health</h1>
 		<a data-rel="back" data-icon="back">Back</a>
 		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
@@ -80,12 +69,12 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 	<div class="ui-body ui-body-a ui-corner-all">
 			<h1>Healthy Nutrition</h1>
-						<p>This page contain general health that helps your health and reduce your risk of chronic diseases. Try answering as many as correct answers to help you gain more knowledge.</p>
+						<p>This page contains general health tips that help your health and reduces your risk of chronic diseases. Try answering as many correct as possible to help you gain more knowledge.</p>
 		<div data-role="navbar">
 		    <ul>
-					<li><a href="#womens-health" data-transition="flow">Women's <br>Nutrition</a></li>
-					<li><a href="#mens-health" data-transition="flow">Men's <br>Nutrition</a></li>
-					<li><a href="#kids-health" data-transition="flow">Teen <br>Nutrition</a></li>
+					<li><a href="#womens-health" data-transition="flow">Women's<br>Nutrition</a></li>
+					<li><a href="#mens-health" data-transition="flow">Men's<br>Nutrition</a></li>
+					<li><a href="#kids-health" data-transition="flow">Teen<br>Nutrition</a></li>
 				</ul>
 		</div>
 	</div>
@@ -93,51 +82,51 @@ For the record, there are 158 divs with the data-role="popup"-->
 <div data-role="collapsibleset">
 
 	<div data-role="collapsible">
-	  <h3> Why is healthy eating important? </h3>
+	  <h3>Why is healthy eating important?</h3>
       <ul data-role="listview" data-inset="true">
-      		<li><a href="#1falseanswer1" data-rel="popup" data-transition="flip"><p class="noelipsis">A. It makes you thinner</p></a></li> 
-     			<li><a href="#GAq1a2" data-rel="popup" data-transition="flip"><p class="noelipsis">B. It is the foundation of a healthy lifestyle</p></a></li>
-          <li><a href="#GAq1a3" data-rel="popup" data-transition="flip"><p class="noelipsis">C. It improves your overall beauty</p></a></li>
-      		<li><a href="#GAq1a4" data-rel="popup" data-transition="flip"><p class="noelipsis">D. It makes you smarter</p></a></li>
+      		<li><a href="#1falseanswer1" data-rel="popup" data-transition="flip">A. It makes you thinner</a></li> 
+     			<li><a href="#GAq1a2" data-rel="popup" data-transition="flip">B. It is the foundation of a healthy lifestyle</a></li>
+          <li><a href="#GAq1a3" data-rel="popup" data-transition="flip">C. It improves your overall beauty</a></li>
+      		<li><a href="#GAq1a4" data-rel="popup" data-transition="flip">D. It makes you smarter</a></li>
       </ul>
   </div>
   
 		<div data-role="popup" id="1falseanswer1" class="ui-content">
-			<h3> That is Incorrect</h3>
-			<p> Being thinner does not make you healthier </p>
+			<h3>That is Incorrect</h3>
+			<p>Being thinner does not make you healthier</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq1a2" class="ui-content">
-			<h3> This is Correct!</h3>
+			<h3>This is Correct!</h3>
 			<p>  Healthy eating is the foundation of a healthy lifestyle  </p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq1a3" class="ui-content">
-			<h3> That is Incorrect</h3>
-			<p> Eating healthy dose not make a difference in your overall beauty </p>
+			<h3>That is Incorrect</h3>
+			<p>Eating healthy dose not make a difference in your overall beauty</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq1a4" class="ui-content">
-			<h3> That is Incorrect</h3>
-			<p> It can only help you get smarter not become smarter automatically  </p>
+			<h3>That is Incorrect</h3>
+			<p>It can only help you get smarter not become smarter automatically  </p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
@@ -146,51 +135,51 @@ For the record, there are 158 divs with the data-role="popup"-->
       
 
     <div data-role="collapsible">
-      <h3> What is the difference between organic & non-organic? </h3>
+      <h3>What is the difference between organic &amp; non-organic? </h3>
 				<ul data-role="listview" data-inset="true">
-					<li><a href="#GAq2a1" data-rel="popup" data-transition="flip"> A. Organic has pesticides & non-organic does not. </a></li>
-					<li><a href="#GAq2a2" data-rel="popup" data-transition="flip"> B. Non-organic foods is not real food </a></li>
-					<li><a href="#GAq2a3" data-rel="popup" data-transition="flip"> C. Organic foods is cheap & better for your health while non-organic is expensive & not as good for your health </a></li>
-					<li><a href="#GAq2a4" data-rel="popup" data-transition="flip"> D. Organic food is grown with natural fertilizers and it is more nutritious while non-organic foods is grown using chemical fertilizes & harms health </a></li>
+					<li><a href="#GAq2a1" data-rel="popup" data-transition="flip">A. Organic has pesticides  & amp; non-organic does not</a></li>
+					<li><a href="#GAq2a2" data-rel="popup" data-transition="flip">B. Non-organic foods is not real food</a></li>
+					<li><a href="#GAq2a3" data-rel="popup" data-transition="flip">C. Organic foods are cheap  & amp; better for your health while non-organic is expensive &amp; not as good for your health</a></li>
+					<li><a href="#GAq2a4" data-rel="popup" data-transition="flip">D. Organic food is grown with natural fertilizers and it is more nutritious while non-organic foods is grown using chemical fertilizes  & amp; harms health</a></li>
 				</ul>
 			</div>
 			
 		<div data-role="popup" id="GAq2a1" class="ui-content">
-			<h3> That is Incorrect </h3>
-			<p> Organic foods do not contain any pesticides </p>
+			<h3>That is Incorrect</h3>
+			<p>Both organic foods and non-organic foods can use pesticides</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq2a2" class="ui-content">
-			<h3> That is Incorrect </h3>
-			<p> non-organic is still real food </p>
+			<h3>That is Incorrect</h3>
+			<p>Non-organic is still real food</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq2a3" class="ui-content">
-			<h3> That is Incorrect </h3>
-			<p> Organic food is expensive and non-organic is cheaper </p>
+			<h3>That is Incorrect</h3>
+			<p>Organic food is expensive and non-organic is cheaper</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq2a4" class="ui-content">
-			<h3> That is Correct!</h3>
-			<p> Organic food have natural fertilizers and non-organic has pesticides  </p>
+			<h3>That is Correct!</h3>
+			<p>Organic foods must use natural fertilizers and non-organic don't have to</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
@@ -200,50 +189,50 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 
 <div data-role="collapsible">
-<h3> What is the daily water in take for the average person? </h3>
+<h3>What is the recommended daily water intake for the average person?</h3>
      	<ul data-role="listview" data-inset="true">
-			<li><a href="#GAq3a1" data-rel="popup" data-transition="flip"> A. 9 1/3 cups a day </a></li>
-			<li><a href="#GAq3a2" data-rel="popup" data-transition="flip"> B. Everyday other day drink 4 cups </a></li>
-			<li><a href="#GAq3a3" data-rel="popup" data-transition="flip"> C. 12 cups of water </a></li>
-			<li><a href="#GAq3a4" data-rel="popup" data-transition="flip"> D. 8 cups of water </a></li>
+			<li><a href="#GAq3a1" data-rel="popup" data-transition="flip">A. 9 1/3 cups a day</a></li>
+			<li><a href="#GAq3a2" data-rel="popup" data-transition="flip">B. Everyday other day drink 4 cups</a></li>
+			<li><a href="#GAq3a3" data-rel="popup" data-transition="flip">C. 12 cups of water</a></li>
+			<li><a href="#GAq3a4" data-rel="popup" data-transition="flip">D. 8 cups of water</a></li>
 		</ul>
 </div>
 		<div data-role="popup" id="GAq3a1" class="ui-content">
-			<h3> That is Incorrect</h3>
-			<p>   this is a little too much  </p>
+			<h3>That is Incorrect</h3>
+			<p>This is a little too much</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq3a2" class="ui-content">
-			<h3> That is Incorrect</h3>
-			<p> your body needs to be hydrated everyday  </p>
+			<h3>That is Incorrect</h3>
+			<p>Your body needs to be hydrated everyday</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq3a3" class="ui-content">
-			<h3> That is Incorrect</h3>
-			<p> this is a little  too much </p>
+			<h3>That is Incorrect</h3>
+			<p>This is a little  too much</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq3a4" class="ui-content">
-			<h3> That is Correct! </h3>
-			<p> 8 cups of water is the right amount </p>
+			<h3>That is Correct!</h3>
+			<p>8 cups of water is the right amount</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
@@ -252,50 +241,50 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 
 <div data-role="collapsible">
-				<h3> How does nutritious food impact health? </h3>
+				<h3>How does nutritious food impact health? </h3>
 		<ul data-role="listview" data-inset="true">
-			<li><a href="#GAq4a1" data-rel="popup" data-transition="flip"> A. Food gives your body information, material & energy to function properly  </a></li>
-			<li><a href="#GAq4a2" data-rel="popup" data-transition="flip"> B. It takes part in your bone structure </a></li>
-			<li><a href="#GAq4a3" data-rel="popup" data-transition="flip"> C. Food only affects health if you are on a diet </a></li>
-            <li><a href="#GAq4a4" data-rel="popup" data-transition="flip"> D. It does not affect your health </a></li>
+			<li><a href="#GAq4a1" data-rel="popup" data-transition="flip">A. Food gives your body material & amp; energy to function properly</a></li>
+			<li><a href="#GAq4a2" data-rel="popup" data-transition="flip">B. It takes part in your bone structure</a></li>
+			<li><a href="#GAq4a3" data-rel="popup" data-transition="flip">C. Food only affects health if you are on a diet</a></li>
+            <li><a href="#GAq4a4" data-rel="popup" data-transition="flip">D. It does not affect your health</a></li>
 		</ul>
 	</div>
 		<div data-role="popup" id="GAq4a1" class="ui-content">
-			<h3> That is Correct! </h3>
-			<p> That is how nutritious foods impact health by functioning properly  </p>
+			<h3>That is Correct! </h3>
+			<p>That is how nutritious foods impact health by functioning properly</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq4a2" class="ui-content">
-			<h3> That is Incorrect</h3>
-			<p> It dont not have anything in your bone structure, that come in your genes </p>
+			<h3>That is Incorrect</h3>
+			<p>Healthy food gives you healthy bones, but your bone structure is determined by your genetics</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq4a3" class="ui-content">
-			<h3> That is Incorrect </h3>
-			<p>  Healthy food dose not impact health only when you are in diet </p>
+			<h3>That is Incorrect</h3>
+			<p>Nutritious foods are always good, whether or not you're on a diet</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq4a4" class="ui-content">
-			<h3> That is Incorrect  </h3>
-			<p> It dose have an impact in you health </p>
+			<h3>That is Incorrect  </h3>
+			<p>It dose have an impact in you health</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
@@ -305,50 +294,50 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 
 		        <div data-role="collapsible">
-				<h3> Are all sugars bad? </h3>
+				<h3>Are all sugars bad? </h3>
 		<ul data-role="listview" data-inset="true">	
-			<li><a href="#GAq5a1" data-rel="popup" data-transition="flip"> A. All sugars are bad for your health </a></li>
-			<li><a href="#GAq5a2" data-rel="popup" data-transition="flip"> B. Sugars are only bad for you if your lactose intolerant </a></li>
-			<li><a href="#GAq5a3" data-rel="popup" data-transition="flip"> C. Sugar only affects people if they have too much of it consumed, it can cause obesity and other illnesses. </a></li>
-			<li><a href="#GAq5a4" data-rel="popup" data-transition="flip"> D. Sugar is actually helpful for those who burn alot of calories  </a></li>
+			<li><a href="#GAq5a1" data-rel="popup" data-transition="flip">A. All sugars are bad for your health</a></li>
+			<li><a href="#GAq5a2" data-rel="popup" data-transition="flip">B. Sugars are only bad for you if your lactose intolerant</a></li>
+			<li><a href="#GAq5a3" data-rel="popup" data-transition="flip">C. Sugar only affects people if they have too much of it consumed, it can cause obesity and other illnesses. </a></li>
+			<li><a href="#GAq5a4" data-rel="popup" data-transition="flip">D. Sugar is actually helpful for those who burn alot of calories  </a></li>
        </ul>
       </div>
 		<div data-role="popup" id="GAq5a1" class="ui-content">
-			<h3> That is Incorrect </h3>
-			<p> Not all sugars are harmful</p>
+			<h3>That is Incorrect</h3>
+			<p>Not all sugars are harmful</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq5a2" class="ui-content">
-			<h3> That is Incorrect </h3>
-			<p> Sugar is not bad if you are lactose intolerant </p>
+			<h3>That is Incorrect</h3>
+			<p>Sugar is not bad if you are lactose intolerant</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq5a3" class="ui-content">
-			<h3> That is Correct! </h3>
-			<p> Sugar is good with moderation however, it harmful if you eat too much of it.  </p>
+			<h3>That is Correct! </h3>
+			<p>Sugar is good with moderation however, it harmful if you eat too much of it.  </p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq5a4" class="ui-content">
-			<h3>  That is Incorrect </h3>
-			<p> It is actually so unhealthy </p>
+			<h3>  That is Incorrect</h3>
+			<p>It is actually so unhealthy</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
@@ -358,50 +347,50 @@ For the record, there are 158 divs with the data-role="popup"-->
 		
 
                 <div data-role="collapsible">
-          		<h3> Are all fats bad? </h3>
+          		<h3>Are all fats bad? </h3>
         <ul data-role="listview" data-inset="true">
-			<li><a href="#GAq6a1" data-rel="popup" data-transition="flip">A. Yes, they will lead to obesity </a></li>
-			<li><a href="#GAq6a2" data-rel="popup" data-transition="flip">B. Yes, all fats are only found in junk foods </a></li>
-			<li><a href="#GAq6a3" data-rel="popup" data-transition="flip">C. No, all fats are healthy </a></li>
-			<li><a href="#GAq6a4" data-rel="popup" data-transition="flip">D. No, some fats are major source of energy </a></li>
+			<li><a href="#GAq6a1" data-rel="popup" data-transition="flip">A. Yes, they will lead to obesity</a></li>
+			<li><a href="#GAq6a2" data-rel="popup" data-transition="flip">B. Yes, all fats are only found in junk foods</a></li>
+			<li><a href="#GAq6a3" data-rel="popup" data-transition="flip">C. No, all fats are healthy</a></li>
+			<li><a href="#GAq6a4" data-rel="popup" data-transition="flip">D. No, some fats are major source of energy</a></li>
 		</ul>
 	</div>
 		<div data-role="popup" id="GAq6a1" class="ui-content">
-			<h3> That is Incorrect  </h3>
-			<p> Not all Fats lead to obesity </p>
+			<h3>That is Incorrect  </h3>
+			<p>Not all Fats lead to obesity</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq6a2" class="ui-content">
-			<h3> That s Incorrect  </h3>
-			<p> All fats are not found inn junk food some fats are very nutritional </p>
+			<h3>That s Incorrect  </h3>
+			<p>All fats are not found inn junk food some fats are very nutritional</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq6a3" class="ui-content">
-			<h3> That is Incorrect </h3>
-			<p> Not all Fats ar ebad but also not all Fats are healthy</p>
+			<h3>That is Incorrect</h3>
+			<p>Not all Fats ar ebad but also not all Fats are healthy</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq6a4" class="ui-content">
-			<h3> That is Correct! </h3>
-			<p> Some Fats are very helpful with having energy and they are not harmful</p>
+			<h3>That is Correct! </h3>
+			<p>Some Fats are very helpful with having energy and they are not harmful</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
@@ -411,83 +400,83 @@ For the record, there are 158 divs with the data-role="popup"-->
 		
 
 		<div data-role="collapsible">
-		<h3> Which two below are not an essential nutrient?</h3>
+		<h3>Which two below are not an essential nutrient?</h3>
 		<ul data-role="listview" data-inset="true">
-			<li><a href="#GAq7a1" data-rel="popup" data-transition="flip">A. Oil </a></li>
-			<li><a href="#GAq7a2" data-rel="popup" data-transition="flip">B. Fats </a></li>
-			<li><a href="#GAq7a3" data-rel="popup" data-transition="flip">C. Proteins </a></li>
-      <li><a href="#GAq7a4" data-rel="popup" data-transition="flip">D. Carbs </a></li>
-			<li><a href="#GAq7a5" data-rel="popup" data-transition="flip">E. Vitamin & Minerals </a></li>
+			<li><a href="#GAq7a1" data-rel="popup" data-transition="flip">A. Oil</a></li>
+			<li><a href="#GAq7a2" data-rel="popup" data-transition="flip">B. Fats</a></li>
+			<li><a href="#GAq7a3" data-rel="popup" data-transition="flip">C. Proteins</a></li>
+      <li><a href="#GAq7a4" data-rel="popup" data-transition="flip">D. Carbs</a></li>
+			<li><a href="#GAq7a5" data-rel="popup" data-transition="flip">E. Vitamin  & amp; Minerals</a></li>
 			<li><a href="#GAq7a6" data-rel="popup" data-transition="flip">F. Water</a></li>
-			<li><a href="#GAq7a7" data-rel="popup" data-transition="flip">G. Nuts </a></li>
+			<li><a href="#GAq7a7" data-rel="popup" data-transition="flip">G. Nuts</a></li>
 		</ul>
 	</div>
 		<div data-role="popup" id="GAq7a1" class="ui-content">
 			<h3>  That is Correct!</h3>
-			<p> Oil is not an essential nutrient,it is not needed as much</p>
+			<p>Oil is not an essential nutrient,it is not needed as much</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq7a2" class="ui-content">
-			<h3> That is Incorrect! </h3>
-			<p> Fats are needed </p>
+			<h3>That is Incorrect! </h3>
+			<p>Fats are needed</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq7a3" class="ui-content">
 			<h3>  That is Incorrect!</h3>
-			<p> Protein is very nutritious </p>
+			<p>Protein is very nutritious</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq7a4" class="ui-content">
-			<h3> That is Incorrect! </h3>
-			<p> Carbs are an essential nutrient </p>
+			<h3>That is Incorrect! </h3>
+			<p>Carbs are an essential nutrient</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq7a5" class="ui-content">
-			<h3> That is Incorrect  </h3>
-			<p> Vitamins & Minerals are very important to our bodies </p>
+			<h3>That is Incorrect  </h3>
+			<p>Vitamins  & amp; Minerals are very important to our bodies</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq7a6" class="ui-content">
 			<h3>  That is Incorrect</h3>
-			<p> Water is the most needed essential nutrient </p>
+			<p>Water is the most needed essential nutrient</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq7a7" class="ui-content">
-			<h3> That is Correct!</h3>
-			<p> Nuts are not an essential nutrients </p>
+			<h3>That is Correct!</h3>
+			<p>Nuts are not an essential nutrients</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
@@ -497,7 +486,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 
          <div data-role="collapsible">
-         <h3> Why are some people gluten free and what is it? </h3>
+         <h3>Why are some people gluten free and what is it? </h3>
          <ul data-role="listview" data-inset="true">
 			<li><a href="#GAq8a1" data-rel="popup" data-transition="flip">A. People can only eat goat milk in gluten free foods. Being gluten is eating pure goat milk in foods.</a></li>
 			<li><a href="#GAq8a2" data-rel="popup" data-transition="flip">B. People vomit any wheat, rye and barley eaten. Gluten is when your stomach gets upset with eating wheat,rye and barley. </a></li>
@@ -507,51 +496,51 @@ For the record, there are 158 divs with the data-role="popup"-->
          </ul>
       </div>
 		<div data-role="popup" id="GAq8a1" class="ui-content">
-			<h3> That is Incorrect </h3>
-			<p> People can not only eat goat milk if they are Gluten free</p>
+			<h3>That is Incorrect</h3>
+			<p>People can not only eat goat milk if they are Gluten free</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq8a2" class="ui-content">
-			<h3> That is Incorrect </h3>
-			<p> That is not being Gluten free</p>
+			<h3>That is Incorrect</h3>
+			<p>That is not being Gluten free</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq8a3" class="ui-content">
-			<h3> That is Incorrect</h3>
-			<p> If you are Gluten free goat milk will not be helpful and that is not being Gluten free </p>
+			<h3>That is Incorrect</h3>
+			<p>If you are Gluten free goat milk will not be helpful and that is not being Gluten free</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq8a4" class="ui-content">
-			<h3> That is Incorrect </h3>
-			<p> That is not being Gluten free </p>
+			<h3>That is Incorrect</h3>
+			<p>That is not being Gluten free</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq8a5" class="ui-content">
-			<h3> This is Correct! </h3>
-			<p> Gluten free is not being able to digest the two proteins </p>
+			<h3>This is Correct! </h3>
+			<p>Gluten free is not being able to digest the two proteins</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
@@ -561,16 +550,16 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 
 		<div data-role="collapsible">
-		 <h3> What effects do GMO have on the body? </h3>
+		 <h3>What effects do GMO have on the body? </h3>
 		 <ul data-role="listview" data-inset="true">
-			<li><a href="#GAq9a1" data-rel="popup" data-transition="flip">A. GMO benefits your overall health </a></li>
-			<li><a href="#GAq9a2" data-rel="popup" data-transition="flip">B. GMO trigger new allergens in human & can potentially cause cancer and other illnesses celiac disease. </a></li>
-			<li><a href="#GAq9a3" data-rel="popup" data-transition="flip">C. GMO increase energy and help you look thinner </a></li>
-			<li><a href="#GAq9a4" data-rel="popup" data-transition="flip">D. GMO prevents dieses </a></li>
+			<li><a href="#GAq9a1" data-rel="popup" data-transition="flip">A. GMO benefits your overall health</a></li>
+			<li><a href="#GAq9a2" data-rel="popup" data-transition="flip">B. GMO trigger new allergens in human  & amp; can potentially cause cancer and other illnesses celiac disease. </a></li>
+			<li><a href="#GAq9a3" data-rel="popup" data-transition="flip">C. GMO increase energy and help you look thinner</a></li>
+			<li><a href="#GAq9a4" data-rel="popup" data-transition="flip">D. GMO prevents dieses</a></li>
 		</ul>
 	</div>
 		<div data-role="popup" id="GAq9a1" class="ui-content">
-			<h3> That is Incorrect</h3>
+			<h3>That is Incorrect</h3>
 			<p>It actually dose the opposite</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
@@ -580,31 +569,31 @@ For the record, there are 158 divs with the data-role="popup"-->
 		</div>
 
 		<div data-role="popup" id="GAq9a2" class="ui-content">
-			<h3> That is Correct!</h3>
-			<p> GMO cause illnesses </p>
+			<h3>That is Correct!</h3>
+			<p>GMO cause illnesses</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq9a4" class="ui-content">
-			<h3> That is Incorrect</h3>
-			<p> GMO dose the opposite of preventing dieses </p>
+			<h3>That is Incorrect</h3>
+			<p>GMO dose the opposite of preventing dieses</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq9a3" class="ui-content">
-			<h3> That is Incorrect </h3>
-			<p> GMO dose not increase any energy and has no control over your appearance </p>
+			<h3>That is Incorrect</h3>
+			<p>GMO dose not increase any energy and has no control over your appearance</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
@@ -615,50 +604,50 @@ For the record, there are 158 divs with the data-role="popup"-->
 		
 
 		<div data-role="collapsible">
-		<h3> Explain the difference between Vegetarian & Pescatarian </h3>
+		<h3>Explain the difference between Vegetarian  & amp; Pescatarian</h3>
 		<ul data-role="listview" data-inset="true">
-		    <li><a href="#GAq10a1" data-rel="popup" data-transition="flip"> A. Vegetarians do not eat any animal based products, while Pescatterians make the exception of fish </a></li>
-		    <li><a href="#GAq10a2" data-rel="popup" data-transition="flip"> B. Vegetarians only eat fish while Pescatarians don not eat fish </a></li>
-			<li><a href="#GAq10a3" data-rel="popup" data-transition="flip"> C. Vegetarians do not eat any type of meat, while Pescartarians avoid all meats but fish  </a></li>
-			<li><a href="#GAq10a4" data-rel="popup" data-transition="flip"> D. Vegetarians eat all meats but not fish while Pescatarians eat everything but especially fish </a></li>
+		    <li><a href="#GAq10a1" data-rel="popup" data-transition="flip">A. Vegetarians do not eat any animal based products, while Pescatterians make the exception of fish</a></li>
+		    <li><a href="#GAq10a2" data-rel="popup" data-transition="flip">B. Vegetarians only eat fish while Pescatarians don not eat fish</a></li>
+			<li><a href="#GAq10a3" data-rel="popup" data-transition="flip">C. Vegetarians do not eat any type of meat, while Pescartarians avoid all meats but fish  </a></li>
+			<li><a href="#GAq10a4" data-rel="popup" data-transition="flip">D. Vegetarians eat all meats but not fish while Pescatarians eat everything but especially fish</a></li>
 	    </ul>
 	  </div>
 		<div data-role="popup" id="GAq10a1" class="ui-content">
-			<h3> This is Incorrect!  </h3>
-			<p> Vegetarians do not eat any animal based products  </p>
+			<h3>This is Incorrect!  </h3>
+			<p>Vegetarians do not eat any animal based products  </p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq10a2" class="ui-content">
-			<h3> That is Incorrect</h3>
-			<p> Vegetarians dont only eat meat and Pescatarians do eat fish  </p>
+			<h3>That is Incorrect</h3>
+			<p>Vegetarians dont only eat meat and Pescatarians do eat fish  </p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq10a3" class="ui-content">
-			<h3> That is Correct!  </h3>
+			<h3>That is Correct!  </h3>
 			<p>  Vegetarians do not eat any type of meat and Pescatarians avoid  all meats  </p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq10a4" class="ui-content">
-			<h3> That is Incorrect </h3>
-			<p> Vegatarians do not eat any meats </p>
+			<h3>That is Incorrect</h3>
+			<p>Vegatarians do not eat any meats</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
@@ -668,52 +657,52 @@ For the record, there are 158 divs with the data-role="popup"-->
 	    
 
 	    <div data-role="collapsible">
-	    <h3> How can I overcome barriers of eating healthy? </h3>
+	    <h3>How can I overcome barriers of eating healthy? </h3>
 	    
 	    
 	    <ul data-role="listview" data-inset="true">
-			<li><a href="#GAq11a1" data-rel="popup" data-transition="flip">A. Planting a garden & choosing non-GMO foods and organic as well as purchasing local foods. </a></li>
-			<li><a href="#GAq11a2" data-rel="popup" data-transition="flip">B. Choosing foods that are GMO but gluten free </a></li>
-			<li><a href="#GAq11a3" data-rel="popup" data-transition="flip">C. Eating food with only no trans fat </a></li>
-			<li><a href="#GAq11a4" data-rel="popup" data-transition="flip">D. Purchasing healthier foods in the drive thru </a></li>
+			<li><a href="#GAq11a1" data-rel="popup" data-transition="flip">A. Planting a garden  & amp; choosing non-GMO foods and organic as well as purchasing local foods. </a></li>
+			<li><a href="#GAq11a2" data-rel="popup" data-transition="flip">B. Choosing foods that are GMO but gluten free</a></li>
+			<li><a href="#GAq11a3" data-rel="popup" data-transition="flip">C. Eating food with only no trans fat</a></li>
+			<li><a href="#GAq11a4" data-rel="popup" data-transition="flip">D. Purchasing healthier foods in the drive thru</a></li>
 	    </ul>
 	  </div>
 		<div data-role="popup" id="GAq11a1" class="ui-content">
-			<h3> That is Correct</h3>
-			<p> Gardening, choosing local, Organic and avoiding GMOs.</p>
+			<h3>That is Correct</h3>
+			<p>Gardening, choosing local, Organic and avoiding GMOs.</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq11a2" class="ui-content">
-			<h3> That is Incorrect </h3>
-			<p> That is not healthy eating </p>
+			<h3>That is Incorrect</h3>
+			<p>That is not healthy eating</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq11a3" class="ui-content">
-			<h3> That is Incorrect</h3>
-			<p> That is not healthy </p>
+			<h3>That is Incorrect</h3>
+			<p>That is not healthy</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
 
 		<div data-role="popup" id="GAq11a4" class="ui-content">
-			<h3> That is Incorrect </h3>
-			<p> That is not nutritions  </p>
+			<h3>That is Incorrect</h3>
+			<p>That is not nutritions  </p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
 					<div class="ui-block-c"></div>
 				</div>
 		</div>
@@ -767,7 +756,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 </div>
 
 <div data-role="collapsible">
-<h3> What are blueberries good for?
+<h3>What are blueberries good for?
  </h3>
 <ul data-role="listview" data-icon="false">
 <li><a href="#q3a1" data-rel="popup" data-transition="flip">A. Nail Growth</a></li>
@@ -788,7 +777,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 </div>
 
 <div data-role="collapsible">
-<h3> Does your body image define your health? </h3>
+<h3>Does your body image define your health? </h3>
 <ul data-role="listview" data-icon="false">
 <li><a href="#q5a1" data-rel="popup" data-transition="flip">A. Yes, because you should be really short. </a></li>
 <li><a href="#q5a2" data-rel="popup" data-transition="flip">B. No, because everyone is thick.</a></li>
@@ -882,7 +871,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 		<div data-role="popup" id="q3a1" class="ui-content">
 			<h3>Incorrect!</h3>
-			<p> Eating blueberries doesn't make your nails grow.</p>
+			<p>Eating blueberries doesn't make your nails grow.</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
 					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -892,7 +881,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 		<div data-role="popup" id="q3a2" class="ui-content">
 			<h3>Incorrect!</h3>
-			<p> The color of blueberries (dark blue) stains your teeth.</p>
+			<p>The color of blueberries (dark blue) stains your teeth.</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
 					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got it!</a></div>
@@ -922,7 +911,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 		<div data-role="popup" id="q4a1" class="ui-content">
 			<h3>Correct!</h3>
-			<p> Eating fruits and vegetables and high fibre food help prevent the disease.</p>
+			<p>Eating fruits and vegetables and high fibre food help prevent the disease.</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
 					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -952,7 +941,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 		<div data-role="popup" id="q4a4" class="ui-content">
 			<h3>Incorrect!</h3>
-			<p> Eating health makes it a low risk of it getting bad.</p>
+			<p>Eating health makes it a low risk of it getting bad.</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
 					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -1010,7 +999,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="mens-health">
 	<div data-role="header" data-position="fixed">
-		<h1> Men's Health</h1>
+		<h1>Men's Health</h1>
 		<a data-rel="back" data-icon="back">Back</a>
 		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
@@ -1032,10 +1021,10 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 				<h3>How many servings of fruits and vegetables should males eat on a daily basis? </h3>
 				<ul data-role="listview" data-icon="false">
-					<li><a href="#MH1falseanswer1" data-rel="popup" data-transition="flip"> 5 servings </a></li>
-					<li><a href="#q1a2" data-rel="popup" data-transition="flip"> 1 serving of each </a></li> 
-					<li><a href="#MH1falseanswer3" data-rel="popup" data-transition="flip"> 7 servings </a></li>
-					<li><a href="#MH1trueanswer" data-rel="popup" data-transition="flip"> 9 servings </a></li> <!-- Correct -->
+					<li><a href="#MH1falseanswer1" data-rel="popup" data-transition="flip">5 servings</a></li>
+					<li><a href="#q1a2" data-rel="popup" data-transition="flip">1 serving of each</a></li> 
+					<li><a href="#MH1falseanswer3" data-rel="popup" data-transition="flip">7 servings</a></li>
+					<li><a href="#MH1trueanswer" data-rel="popup" data-transition="flip">9 servings</a></li> <!-- Correct -->
 				</ul>
 			</div>
 			
@@ -1073,7 +1062,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 		
 		<div data-role="popup" id="MH1trueanswer" class="ui-content">
 		<h3>Correct!</h3>
-		<p> You got it! 9 is the recommended serving.</p>
+		<p>You got it! 9 is the recommended serving.</p>
 		<div class="ui-grid-b">
 			<div class="ui-block-a"></div>
 			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -1083,12 +1072,12 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 
 			<div data-role="collapsible">
-				<h3> Which of the following are not included as part of the "5 a day"?</h3>
+				<h3>Which of the following are not included as part of the "5 a day"?</h3>
 				<ul data-role="listview" data-icon="false">
-					<li><a href="#MH2falseanswer1" data-rel="popup" data-transition="flip"> banana chips </a></li>
-					<li><a href="#MH2falseanswer2" data-rel="popup" data-transition="flip"> tomatoes </a></li>
-					<li><a href="#MH2trueanswer" data-rel="popup" data-transition="flip"> potatoes </a></li> <!-- Correct -->
-					<li><a href="#MH2falseanswer3" data-rel="popup" data-transition="flip"> chickpeas </a></li>
+					<li><a href="#MH2falseanswer1" data-rel="popup" data-transition="flip">banana chips</a></li>
+					<li><a href="#MH2falseanswer2" data-rel="popup" data-transition="flip">tomatoes</a></li>
+					<li><a href="#MH2trueanswer" data-rel="popup" data-transition="flip">potatoes</a></li> <!-- Correct -->
+					<li><a href="#MH2falseanswer3" data-rel="popup" data-transition="flip">chickpeas</a></li>
 				</ul>
 			</div>
 <!-- POP UPS FOR QUESTION 2 -->
@@ -1135,12 +1124,12 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 
 			<div data-role="collapsible">
-				<h3> What percentage of daily calories should males be receiving from protein?  </h3>
+				<h3>What percentage of daily calories should males be receiving from protein?  </h3>
 					<ul data-role="listview" data-icon="false">
-					<li><a href="#MH3falseanswer1" data-rel="popup" data-transition="flip"> 5 to 20% </a></li>
-					<li><a href="#MH3trueanswer" data-rel="popup" data-transition="flip"> 10 to 35% </a></li> <!-- Correct -->
-					<li><a href="#MH3falseanswer2" data-rel="popup" data-transition="flip"> 25 to 45% </a></li>
-					<li><a href="#MH3falseanswer3" data-rel="popup" data-transition="flip"> 20 to 30% </a></li>
+					<li><a href="#MH3falseanswer1" data-rel="popup" data-transition="flip">5 to 20% </a></li>
+					<li><a href="#MH3trueanswer" data-rel="popup" data-transition="flip">10 to 35% </a></li> <!-- Correct -->
+					<li><a href="#MH3falseanswer2" data-rel="popup" data-transition="flip">25 to 45% </a></li>
+					<li><a href="#MH3falseanswer3" data-rel="popup" data-transition="flip">20 to 30% </a></li>
 				</ul>
 			</div>
 			
@@ -1188,12 +1177,12 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 
 			<div data-role="collapsible">
-				<h3> Which is not true for a male to stay healthy? </h3>
+				<h3>Which is not true for a male to stay healthy? </h3>
 					<ul data-role="listview" data-icon="false">
-					<li><a href="#MH4falseanswer1" data-rel="popup" data-transition="flip"> eating 5 vegetables a day </a></li>
-					<li><a href="#MH4falseanswer2" data-rel="popup" data-transition="flip"> eating healthy </a></li> 
-					<li><a href="#MH4falseanswer3" data-rel="popup" data-transition="flip"> eating junk food moderately </a></li>
-					<li><a href="#MH4trueanswer" data-rel="popup" data-transition="flip"> must take multivitamins daily </a></li> <!-- Correct -->
+					<li><a href="#MH4falseanswer1" data-rel="popup" data-transition="flip">eating 5 vegetables a day</a></li>
+					<li><a href="#MH4falseanswer2" data-rel="popup" data-transition="flip">eating healthy</a></li> 
+					<li><a href="#MH4falseanswer3" data-rel="popup" data-transition="flip">eating junk food moderately</a></li>
+					<li><a href="#MH4trueanswer" data-rel="popup" data-transition="flip">must take multivitamins daily</a></li> <!-- Correct -->
 				</ul>
 			</div>
 		<div data-role="popup" id="MH4falseanswer1" class="ui-content">
@@ -1239,12 +1228,12 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 
 			<div data-role="collapsible">
-				<h3> What should you avoid eating the most of? </h3>
+				<h3>What should you avoid eating the most of? </h3>
 					<ul data-role="listview" data-icon="false">
-					<li><a href="#MH5falseanswer1" data-rel="popup" data-transition="flip"> fats </a></li>
-					<li><a href="#MH5falseanswer2" data-rel="popup" data-transition="flip"> sugars </a></li> 
-					<li><a href="#MH5falseanswer3" data-rel="popup" data-transition="flip"> chocolate </a></li>
-					<li><a href="#MH5trueanswer" data-rel="popup" data-transition="flip"> trans fats </a></li> <!-- Correct -->
+					<li><a href="#MH5falseanswer1" data-rel="popup" data-transition="flip">fats</a></li>
+					<li><a href="#MH5falseanswer2" data-rel="popup" data-transition="flip">sugars</a></li> 
+					<li><a href="#MH5falseanswer3" data-rel="popup" data-transition="flip">chocolate</a></li>
+					<li><a href="#MH5trueanswer" data-rel="popup" data-transition="flip">trans fats</a></li> <!-- Correct -->
 				</ul>
 			</div>
 
@@ -1329,13 +1318,13 @@ For the record, there are 158 divs with the data-role="popup"-->
 					<li><a href="#KH1trueanswer" data-rel="popup" data-transition="flow">A. 3 cups</a></li>
 					<li><a href="#KHq1a2" data-rel="popup" data-transition="flow">B. 1 cup</a></li>
 					<li><a href="#KHq1a3" data-rel="popup" data-transition="flow">C. 4 cups</a></li>
-					<li><a href="#KHq1a4" data-rel="popup" data-transition="flow">D. 10 cups </a></li>
+					<li><a href="#KHq1a4" data-rel="popup" data-transition="flow">D. 10 cups</a></li>
 				</ul>
 				</div><!---/Question 1-->
 		
 		<!-- start question 2-->
 			<div data-role="collapsible">
-			<h3> What 3 nutrients are very important for teens besides the 6 essential nutrients?</h3>
+			<h3>What 3 nutrients are very important for teens besides the 6 essential nutrients?</h3>
 				<ul data-role="listview" data-icon="false">
 					<li><a href="#KHq2a1" data-rel="popup" data-transition="flow">A. vitamin C, potassium, vitamin B12</a></li>
 					<li><a href="#KHq2a2" data-rel="popup" data-transition="flow">B. iron, folate, fiber</a></li>
@@ -1394,7 +1383,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 		<div data-role="popup" id="KHq1a2" class="ui-content">
 			<h3>That is Incorrect</h3>
-			<p> You need more vegetables that 1 cup a day to be healthy</p>
+			<p>You need more vegetables that 1 cup a day to be healthy</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
 					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -1456,7 +1445,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 		<div data-role="popup" id="KHq2a4" class="ui-content">
 			<h3>That is Incorrect</h3>
-			<p> Only one of these is essential to a teen's health.</p>
+			<p>Only one of these is essential to a teen's health.</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
 					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -1608,12 +1597,12 @@ For the record, there are 158 divs with the data-role="popup"-->
 <div data-role="content">
   <div class="ui-body ui-body-a ui-corner-all">   
              
-		 <p> The following tips are 100% helpful and were listed for your guidance to eat healthy and ultimately lead a healthy lifestyle.</p>
+		 <p>The following tips are 100% helpful and were listed for your guidance to eat healthy and ultimately lead a healthy lifestyle.</p>
 		
 			<ul data-role="listview">
 				<li><h3>Plan Meals Ahead of Time</h3><p class="noelipsis">This allows you to avoid impulse purchases and also helps to ensure that your meals for the week are healthy</p></li>
 				<li><h4>Look For Sales!</h4><p class="noelipsis">Use coupons and know where the sales are locally or online.</p></li>
-				<li><h4>Dont Shop Hungry <br>or Without a List</h4><p class="noelipsis">Planning is key. Make a list and stick to it and definitely have a snack or meal before shopping.</p></li>
+				<li><h4>Dont Shop Hungry<br>or Without a List</h4><p class="noelipsis">Planning is key. Make a list and stick to it and definitely have a snack or meal before shopping.</p></li>
 				<li><h4>Grow a Garden</h4><p class="noelipsis">There are many benefits of growing your own produce: you save money, you will have your own store of fresh veggies, and like a proud mama you can say that you grew it yourself. </p></li>
 				<li><h4>Shop In Bulk</h4><p class="noelipsis">Whether you shop at a health food store or a warehouse-style store, stock up on the affordable stuff while it is affordable. </p></li>
 				<li><h4>Eat Out Less</h4><p class="noelipsis">Try to eat at home as often as possible, and bring your own lunch to work. Cutting down on dining expenses will no doubt cut down on calories, too.Eat out less.  Try to eat at home as often as possible, and bring your own lunch to work. Cutting down on dining expenses will no doubt cut down on calories, too.</p></li>
@@ -1625,19 +1614,21 @@ For the record, there are 158 divs with the data-role="popup"-->
 </div>
 </div><!--/Tips Page-->
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-																		<!--ETHICAL CONSUMPTION SECTION-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+		<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+		<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																				<!--ETHICAL CONSUMPTION SECTION-->
+		<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+		<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 																		<!--Ethical Homepage-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <div data-role="page" id="ec-homepage">
-<div data-role="header">
-<h1 style="text-align: center">Ethical Consumption</h1>
+<div data-role="header" data-position="fixed">
+	<h1>Ethical Consumption</h1>
+		<a data-rel="back" data-icon="back">Back</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
 </div>
 <div data-role="content">
  
@@ -1664,7 +1655,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 																		<!--Ethical Resources-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="ec-resources">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 	<h1>Resources</h1>
 			<a data-rel="back" data-icon="back">Back</a>
 			<a href="#app-homepage" data-icon="home">Home</a>
@@ -1672,7 +1663,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 <div data-role="content">
    	<ul data-role="listview" data-icon="false">
    		<li> <a href="http://ethicalconsumption.org/publications/ethical-consumption-mean/">What is ethical consumption</a></li>
-   		<li> <a href="http://ethicalconsumption.org/"> Ethical Consumption in Australia</a></li>
+   		<li> <a href="http://ethicalconsumption.org/">Ethical Consumption in Australia</a></li>
    		<li> <a href="http://www.developmenteducation.ie/issues-and-topics/ethical-consumption/">Exploring ethical consumption</a></li>
    		<li> <a href="http://www.takepart.com/">Take Part</a></li>
 		<li> <a href="http://www.eschooltoday.com/">eSchool</a></li>
@@ -1683,7 +1674,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 																		<!--Ethical Consumption-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="ethical-consumption">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<h1>Ethical Consumption</h1>
 		<a data-rel="back" data-icon="back">Back</a>
 		<a href="#app-homepage" data-icon="home">Home</a>
@@ -1748,7 +1739,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 																		<!--Environmental Page-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="environment-page">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<h1>Environment</h1>
 		<a data-rel="back" data-icon="back">Back</a>
 		<a href="#app-homepage" data-icon="home">Home</a>
@@ -1771,9 +1762,9 @@ For the record, there are 158 divs with the data-role="popup"-->
 			<div data-role="collapsible" >
 				<h3>How does comercial over-fishing affect the ocean eco-system</h3>
 				<ul data-role="listview" data-icon="false">
-					<li><a href="#1falseanswer1" data-rel="popup" data-transition="flip"> nothing fishing is natural</a></li>
-					<li><a href="#1trueanswer1" data-rel="popup" data-transition="flip">it distroys the marine enviorment, it lessens bio diversity and polutes </a></li>
-					<li><a href="#1falseanswer2" data-rel="popup" data-transition="flip">it helps the marine enviorment </a></li>
+					<li><a href="#1falseanswer1" data-rel="popup" data-transition="flip">nothing fishing is natural</a></li>
+					<li><a href="#1trueanswer1" data-rel="popup" data-transition="flip">it distroys the marine enviorment, it lessens bio diversity and polutes</a></li>
+					<li><a href="#1falseanswer2" data-rel="popup" data-transition="flip">it helps the marine enviorment</a></li>
 					<li><a href="#1falseanswer3" data-rel="popup" data-transition="flip">it kills all the mermaids</a></li>
 				</ul>
 			</div>
@@ -1793,10 +1784,10 @@ For the record, there are 158 divs with the data-role="popup"-->
 			<div data-role="collapsible" >	
 				<h3>What are negative aspects a consumer is supporting when purchasing products that are not considered the term ethically consumed? </h3>
 				<ul data-role="listview" data-icon="false">
-					<li><a href="#choice1" data-rel="popup" data-transition="flip">Cancer and diseases </a></li>
-					<li><a href="#choice2" data-rel="popup" data-transition="flip">Farms that abuse animals </a></li>
-					<li><a href="#choice3" data-rel="popup" data-transition="flip">Farms that grow organic food </a></li>
-					<li><a href="#choice4" data-rel="popup" data-transition="flip">Both A and B </a></li>
+					<li><a href="#choice1" data-rel="popup" data-transition="flip">Cancer and diseases</a></li>
+					<li><a href="#choice2" data-rel="popup" data-transition="flip">Farms that abuse animals</a></li>
+					<li><a href="#choice3" data-rel="popup" data-transition="flip">Farms that grow organic food</a></li>
+					<li><a href="#choice4" data-rel="popup" data-transition="flip">Both A and B</a></li>
 				</ul>
 			</div>			
 		</div><!--/Accordion-->
@@ -1833,7 +1824,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 	<div data-role="popup" id="e1trueanswer" class="ui-content">
 		<h3>Correct!</h3>
-		<p> A loaf of bread requires about 240 gallons of water, a pound of cheese takes about 382 gallons, turkeys take about 160 gallons of water, and a pound of beef takes up 1,800 gallons.
+		<p>A loaf of bread requires about 240 gallons of water, a pound of cheese takes about 382 gallons, turkeys take about 160 gallons of water, and a pound of beef takes up 1,800 gallons.
 </p>
 		<div class="ui-grid-b">
 			<div class="ui-block-a"></div>
@@ -1903,7 +1894,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 	</div>			
 		<div data-role="popup" id="1false3" class="ui-content">
 			<h3>Actually, that is false!</h3>
-			<p>The construction of factories normally involves the production of cement that produces CO2 </p>
+			<p>The construction of factories normally involves the production of cement that produces CO2</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
 					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -1925,7 +1916,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 			<!--POPUPS FOR choice 1-->			
 	<div data-role="popup" id="choice1" class="ui-content">
 		<h3>Actually, that's true!</h3>
-		<p> Yes. Cancer and deadly diseases are an outcome of buying non-organic products with gmo(genetically modified organism(s)), but is not the leading consequence of buying non-ethical consumer.</p>
+		<p>Yes. Cancer and deadly diseases are an outcome of buying non-organic products with gmo(genetically modified organism(s)), but is not the leading consequence of buying non-ethical consumer.</p>
 		<div class="ui-grid-b">
 			<div class="ui-block-a"></div>
 			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -1935,7 +1926,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 			<!--POPUPS FOR choice 2-->			
 	<div data-role="popup" id="choice2" class="ui-content">
 		<h3>Actually, that's true.</h3>
-		<p> As a consumer, purchasing products that aren't considered ethically consumed, or products that don't follow guidelines to an efficient food chain , you are technically supporting the industry of farms that abuse animals and do not abide to an animal rights.</p>
+		<p>As a consumer, purchasing products that aren't considered ethically consumed, or products that don't follow guidelines to an efficient food chain , you are technically supporting the industry of farms that abuse animals and do not abide to an animal rights.</p>
 		<div class="ui-grid-b">
 			<div class="ui-block-a"></div>
 			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -1945,7 +1936,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 			<!--POPUPS FOR choice 3-->			
 		<div data-role="popup" id="choice3" class="ui-content">
 			<h3>Actually, it's completely false!</h3>
-			<p> An ethically consumable product completely follows the guidelines of organic food, safe farms, and affordable products for everyone.</p>
+			<p>An ethically consumable product completely follows the guidelines of organic food, safe farms, and affordable products for everyone.</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
 					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -1956,7 +1947,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 			<!--POPUPS FOR choice 4-->			
 		<div data-role="popup" id="choice4" class="ui-content">
 			<h3>Double True!</h3>
-			<p> Both answers are right!</p>
+			<p>Both answers are right!</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
 					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -1972,10 +1963,8 @@ For the record, there are 158 divs with the data-role="popup"-->
 																		<!--Animal Abuse Page-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="animal-abuse-page">
-	<div data-role="header">
-
+	<div data-role="header" data-position="fixed">
 		<h1>Animal Abuse</h1>
-
 		<a data-rel="back" data-icon="back">Back</a>
 		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
@@ -2004,7 +1993,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 			</div>			
 	<div data-role="collapsible" >
 			<!--start QUESTION 2 ethical consumption-enviroment (enviroment) - Which is illegal in the state California and is considered animal cruelty? - DONE BY jojo -->
-			<h3> Which is illegal in the state California and is considered animal cruelty?</h3>
+			<h3>Which is illegal in the state California and is considered animal cruelty?</h3>
 				<ul data-role="listview" data-icon="false">
 					<li><a href="#2false1" data-rel="popup" data-transition="flip">Force feeding animals</a></li>
 					<li><a href="#2true1" data-rel="popup" data-transition="flip">Plucking animals alive</a></li>
@@ -2017,9 +2006,9 @@ For the record, there are 158 divs with the data-role="popup"-->
 			<div data-role="collapsible" >
 				<h3>What are negative aspects a consumer is supporting when purchasing products that are not considered the term ethically consumed? </h3>
 				<ul data-role="listview" data-icon="false">
-					<li><a href="#choicee1" data-rel="popup" data-transition="flip">Seaboard Foods </a></li>
-					<li><a href="#choicee2" data-rel="popup" data-transition="flip">Western Hog Exchange </a></li>
-					<li><a href="#choicee3" data-rel="popup" data-transition="flip">Tyson Pork Group </a></li>
+					<li><a href="#choicee1" data-rel="popup" data-transition="flip">Seaboard Foods</a></li>
+					<li><a href="#choicee2" data-rel="popup" data-transition="flip">Western Hog Exchange</a></li>
+					<li><a href="#choicee3" data-rel="popup" data-transition="flip">Tyson Pork Group</a></li>
 				</ul>
 			</div>					
 			
@@ -2115,7 +2104,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 	</div>			
 		<div data-role="popup" id="2false2" class="ui-content">
 			<h3>Actually, that is false!</h3>
-			<p>Lots of animals and plants are now GMOs so that they can produce more of something, make them produce something new, even to make their meat healthier </p>
+			<p>Lots of animals and plants are now GMOs so that they can produce more of something, make them produce something new, even to make their meat healthier</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
 					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -2125,7 +2114,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 <div data-role="popup" id="2false3" class="ui-content">
 		<h3>Actually that is false!</h3>
-		<p>This is not illegal but can cause a lot of problems for people who can become immune to the antibiotics </p> 
+		<p>This is not illegal but can cause a lot of problems for people who can become immune to the antibiotics</p> 
 		<div class="ui-grid-b">
 			<div class="ui-block-a"></div>
 			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -2135,7 +2124,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 		<!--POPUPS FOR worst case-->			
 		<div data-role="popup" id="choicee1" class="ui-content">
 			<h3>Case 1. Seaboard Foods, Colorado 2015</h3>
-			<p> A case in Colorado of animal abuse was brought to the eye of the public when an undercover employee video footage was released. The footage showed workers beating pigs with wood planks to kill weak or dying piglets. The video also contained footage of the workers tazing and kicking pigs too heavy to sustain their own weight. This pork company was a supplier of pork meat to Walmart. </p>
+			<p>A case in Colorado of animal abuse was brought to the eye of the public when an undercover employee video footage was released. The footage showed workers beating pigs with wood planks to kill weak or dying piglets. The video also contained footage of the workers tazing and kicking pigs too heavy to sustain their own weight. This pork company was a supplier of pork meat to Walmart. </p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
 					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -2146,8 +2135,8 @@ For the record, there are 158 divs with the data-role="popup"-->
 	
 		<!--POPUPS FOR QUESTION 2-->			
 		<div data-role="popup" id="choicee2" class="ui-content">
-			<h3>Western Hog Exchange a company based out of Alberta </h3>
-			<p> Another disturbing case of animal abuse. The pigs at the farm were shown to be kept in a confined place so small they could barely stand.</p>
+			<h3>Western Hog Exchange a company based out of Alberta</h3>
+			<p>Another disturbing case of animal abuse. The pigs at the farm were shown to be kept in a confined place so small they could barely stand.</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
 					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -2158,7 +2147,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 		<!--POPUPS FOR QUESTION 1-->			
 		<div data-role="popup" id="choicee3" class="ui-content">
 			<h3>Tyson Pork Group, Oklahoma 2013</h3>
-			<p> Footage has also been released The Tyson Pork Group beating animals to death and cramming animals trailers for transportation.</p>
+			<p>Footage has also been released The Tyson Pork Group beating animals to death and cramming animals trailers for transportation.</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
 					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -2171,9 +2160,9 @@ For the record, there are 158 divs with the data-role="popup"-->
 			<div data-role="collapsible" >
 				<h3>How do pesticides affect the enviroment? </h3>
 				<ul data-role="listview" data-icon="false">
-					<li><a href="#choiceee1" data-rel="popup" data-transition="flip">Fact #1 </a></li>
-					<li><a href="#choiceee2" data-rel="popup" data-transition="flip">Fact #2 </a></li>
-					<li><a href="#choiceee3" data-rel="popup" data-transition="flip">Fact #3 </a></li>
+					<li><a href="#choiceee1" data-rel="popup" data-transition="flip">Fact #1</a></li>
+					<li><a href="#choiceee2" data-rel="popup" data-transition="flip">Fact #2</a></li>
+					<li><a href="#choiceee3" data-rel="popup" data-transition="flip">Fact #3</a></li>
 				</ul>
 			</div>
 </div>
@@ -2183,7 +2172,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 																		<!--Organic Food-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="organic-food-page">
-	<div data-role="header">
+	<div data-role="header" data-position="fixed">
 		<h1>Organic Food</h1>
 		<a data-rel="back" data-icon="back">Back</a>
 		<a href="#app-homepage" data-icon="home">Home</a>
@@ -2206,7 +2195,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 			<div data-role="collapsible" >
 				<h3>Which of the following answers is a  real genetically modified fruit or animal?</h3>
 					<ul data-role="listview" data-icon="false">
-							<li><a href="#3false1" data-rel="popup" data-transition="flip">Tomato with fish genes </a></li>
+							<li><a href="#3false1" data-rel="popup" data-transition="flip">Tomato with fish genes</a></li>
 							<li><a href="#3false2" data-rel="popup" data-transition="flip">Goat with spider genes</a></li>
 							<li><a href="#3false3" data-rel="popup" data-transition="flip">Pig with spinach genes</a></li>
 							<li><a href="#3true1" data-rel="popup" data-transition="flip">All of the above</a></li>
@@ -2216,10 +2205,10 @@ For the record, there are 158 divs with the data-role="popup"-->
 		<div data-role="collapsible">
 			<h3>What describes organic food? Choose one of the following. </h3>
 				<ul data-role="listview" data-icon="false">
-					<li><a href="#OFf1" data-rel="popup" data-transition="flip">Food that is grown without any added pestisides or </a></li>
+					<li><a href="#OFf1" data-rel="popup" data-transition="flip">Food that is grown without any added pestisides or</a></li>
 					<li><a href="#OFf2" data-rel="popup" data-transition="flip">The method of using chemical fertilizers,pestisides or any other chemical element.</a></li>
-					<li><a href="#OFt" data-rel="popup" data-transition="flip"> Produce and livestock produced and produced that may use non-harmful chemicals or pesticides</a></li>
-					<li><a href="#OFf3" data-rel="popup" data-transition="flip"> The non-use of of pestisides,fertilizers or any other chemical. </a></li>
+					<li><a href="#OFt" data-rel="popup" data-transition="flip">Produce and livestock produced and produced that may use non-harmful chemicals or pesticides</a></li>
+					<li><a href="#OFf3" data-rel="popup" data-transition="flip">The non-use of of pestisides,fertilizers or any other chemical. </a></li>
 				</ul>
 			</div>
 		
@@ -2232,7 +2221,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 	<div data-role="popup" id="OFf1" class="ui-content">
 		<h3>That's incorrect!</h3>
-		<p>Organic food can actually have non-synthetic pesticides </p>
+		<p>Organic food can actually have non-synthetic pesticides</p>
 		<div class="ui-grid-b">
 			<div class="ui-block-a"></div>
 			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -2281,7 +2270,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 	</div>			
 	<div data-role="popup" id="1t1" class="ui-content">
 		<h3>True!</h3>
-		<p> that is correct many vegstibals and fruits are genetacly modified infact most are</p>
+		<p>that is correct many vegstibals and fruits are genetacly modified infact most are</p>
 		<div class="ui-grid-b">
 			<div class="ui-block-a"></div>
 			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
@@ -2354,14 +2343,16 @@ For the record, there are 158 divs with the data-role="popup"-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<!--===================================================================================-->
-					 <!--Home--> <!--worker-rights-homepage-->
-<!--===================================================================================-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																		<!--Workers Rights Homepage-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <div data-role="page" id="worker-rights-homepage">
 	
-<div data-role="header" data-add-back-btn="true" data-position="fixed" class="headerdiv">
+<div data-role="header" data-position="fixed">
 	<h1>Food Workers Rights</h1>
+	<a data-rel="back" data-icon="back">Back</a>
+	<a href="#app-homepage" data-icon="home">Home</a>
 </div>
 
 <div data-role="content">
@@ -2376,15 +2367,16 @@ For the record, there are 158 divs with the data-role="popup"-->
 </div>
 </div>
 
-<!--===================================================================================-->
-					 <!--Production--> <!--production-->
-<!--===================================================================================-->
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																		<!--Production-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="production">
 
 
-<div data-role="header" data-add-back-btn="true" data-position="fixed">	
+<div data-role="header" data-position="fixed">	
 	<h1>Production</h1> 
+	<a data-rel="back" data-icon="back">Back</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
 </div>
 <div data-role="content">
 
@@ -2460,7 +2452,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 					<!--- pop up anwser for questions -->
 				<div data-role="popup" id="answer-discrimination" class="ui-content"> 
-					<h3> Yes!</h3>
+					<h3>Yes!</h3>
 					<p>There are many different reason why workers are paid low wages.Because so many fieldworkers migrate from poor countries, employers can get away with paying them with a very low wage compared to native-born Americans.They can often discriminated because of how thy look, what they dress like, and what they believe in.</p> 
 					<div class="ui-grid-b">
 						<div class="ui-block-a"></div>
@@ -2480,8 +2472,8 @@ For the record, there are 158 divs with the data-role="popup"-->
 				</div>
 	
 				<div data-role="popup" id="answer-theeffects" class="ui-content">	
-					<h3> What are they? </h3>
-					<p><strong>Child Labor</strong>: Due to low wages, field workers are unable to provide for their families. As a result, many parents unwillingly put their children to work in the fields beside them.  	<br></br><strong>Homelessness</strong>: Due to low wages, field workers don't have enough money to buy a house in expensive areas like Santa Cruz County. This means that they can either rent rooms or live on the streets. 					Not only are wages unfair for the amount of labor fieldworkers do, they are not <em>a living wage</em>.</p>
+					<h3>What are they? </h3>
+					<p><strong>Child Labor</strong>: Due to low wages, field workers are unable to provide for their families. As a result, many parents unwillingly put their children to work in the fields beside them.  	<br></br><strong>Homelessness</strong>: Due to low wages, field workers don't have enough money to buy a house in expensive areas like Santa Cruz County. This means that they can either rent rooms or live on the streets. 					Not only are wages unfair for the amount of labor fieldworkers do, they are not<em>a living wage</em>.</p>
 					<div class="ui-grid-b">
 						<div class="ui-block-a"></div>
 						<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got it!</a></div>
@@ -2496,7 +2488,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 				<h3>How is it that other workers in  other jobs have safety benefits but field workers don't? </h3>
 	
-				<p>	Field workers must pack as much produce as they can in order to make a certain amount of money. 				These workers don't have sick leave, meaning if they take a sick day off they will not make any money. 				Many of these field workers can not afford to lose a day worths of money so they decide to go to work instead. 				The produce in the fields and other co-workers are at risk of getting infected by the sick worker. 				If the person who is sick attends work, it is possible for the worker to infect the produce they are picking and the people they are working around. 				This worker can be endangered of getting more sick--leading to a disease or something worse.<br></br> 
+				<p>Field workers must pack as much produce as they can in order to make a certain amount of money. 				These workers don't have sick leave, meaning if they take a sick day off they will not make any money. 				Many of these field workers can not afford to lose a day worths of money so they decide to go to work instead. 				The produce in the fields and other co-workers are at risk of getting infected by the sick worker. 				If the person who is sick attends work, it is possible for the worker to infect the produce they are picking and the people they are working around. 				This worker can be endangered of getting more sick--leading to a disease or something worse.<br></br> 
 				Additionally, field workers are also at risk because of pesticides. Pesticides are meant for attracting , then destroying pest. 				Pesticides contain many poisonous chemicals that can lead to cancer or male fertility if the body is exposed to it. 				Pesticides can also be passed down from a mother to a baby if the body was exposed to pesticides.</p>
 	
 			</div><!--/Health Tab-->
@@ -2504,7 +2496,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 			<div id="safety">
 
 			<div data-role="collapsible" data-inset="true">
-				<h3> Sexual Harassment </h3> 
+				<h3>Sexual Harassment</h3> 
 				<ul data-role="listview">
 					<li><a href="#catcalling-page-one">Catcalling</a></li>
 					<li><a href="#touchinginappropriately-page-one">Touching Inappropriately</a></li>
@@ -2512,60 +2504,69 @@ For the record, there are 158 divs with the data-role="popup"-->
 			</div>
 
 			<div data-role="collapsible" data-inset="true"> 
-				<h3> Workers Compensation </h3>
+				<h3>Workers Compensation</h3>
 				<ul data-role="listview">
-					<li><a href="#injuries-page-one"> Injuries </a></li>
+					<li><a href="#injuries-page-one">Injuries</a></li>
 				</ul>
 			</div>
 			</div><!--/Saftety Tab-->
 </div><!--/Tabs-->
 </div>
 </div><!--Production Page-->
-	
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																		<!--Catcalling-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="catcalling-page-one">
-	<div data-role="header">
-		<h2> Catcalling </h2>
+	<div data-role="header" data-position="fixed">
+		<h2>Catcalling</h2>
+		<a data-rel="back" data-icon="back">Back</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
 	
 	<div data-role="content">
-		<p> <strong> Verbal Abuse </strong></p>
+		<p> <strong>Verbal Abuse</strong></p>
 		<p>Working in the fields is very difficult, especially for women. Most female fieldworkers experience some sort of sexual harassment while working in the fields. Sexual harassment often occurs because farm workers rarely,if ever, receive sexual harassment training. A common form of sexual harassment is catcalling. Catcalling is when a women receives an unwanted comment, whistle, or shout of a sexual nature.</p> 
 	</div>
 </div><!--/Cat Calling-->
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																		<!--Touching-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="touchinginappropriately-page-one">
 
-	<div data-role="header">
-		 <h2> Touching Inappropriately </h2>
+	<div data-role="header" data-position="fixed">
+		 <h2>Touching Inappropriately</h2>
+		 <a data-rel="back" data-icon="back">Back</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
 	
 	<div data-role="content">
-		 <p> <strong>Sexual Abuse </strong></p>
-		 <p> Imagine going to work and dealing with nasty men who keep touching and looking at you you inappropriately, as if they are mentally undressing you with their eyes. Women in the fields suffer these types of harassment all the time. Statistics have shown 80% of women field workers report sexual harassment and 20% percent don't report it.</p>
+		 <p> <strong>Sexual Abuse</strong></p>
+		 <p>Imagine going to work and dealing with nasty men who keep touching and looking at you you inappropriately, as if they are mentally undressing you with their eyes. Women in the fields suffer these types of harassment all the time. Statistics have shown 80% of women field workers report sexual harassment and 20% percent don't report it.</p>
 	</div>
 </div><!--/Touching-->
 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																		<!--Injuries-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="injuries-page-one">
-	<div data-role="header">
-		<h2> Injuries </h2>
+	<div data-role="header" data-position="fixed">
+		<h2>Injuries</h2>
+		<a data-rel="back" data-icon="back">Back</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
 	
 	<div data-role="content">
-		<p> <strong> Injuries</strong> </p>
+		<p> <strong>Injuries</strong> </p>
 		<p>Many field workers in California and around the nation are undocumented immigrants, so when they do injure themselves at work they are sometimes too afraid to confront their supervisor. Having an injury can mean that they'll get fired and become unable to provide for their families, or worse, get deported. When field workers do get injured and they file for workers compensation, they most likely don't get it. A common injury field workers face are back pains. The back pain could be hurting them so badly that they need to see a doctor. It's unfair how field workers can tolerate all that pain, while most people can even tolerate a simple pinch.</p>
 	</div>
 
 </div> <!-- end of common injuries-->
-
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																		<!--Processing-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page"id="processing">
-	<div data-role="header">
-
+	<div data-role="header" data-position="fixed">
 		<h1>Processing</h1>
-
 		<a data-rel="back" data-icon="back">Back</a>
 		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
@@ -2578,15 +2579,13 @@ For the record, there are 158 divs with the data-role="popup"-->
 		<p>In the processing industry many workers work hard in a cold cooler/freezer for long hours causing stress. Working in a cooler can lead to an illness because of the warm sweat that is being produced while being in a very cold area. This can take money away from people who work in the food processing because they get ill and have to stop working. It can also affect co-workers because the illness can spread if the ill worker decided to go to work while being sick. Additionally, these workers have to deal with heavy machines that can possibly injure or hurt a worker. Some examples of these cases can be when a person accidentally  cuts a hand or a finger. Another example is when a worker injures a knee or a back. Many of these people are left injured or scared because of the poor working conditions. This work brings stress among the people who work in the processing industry.</p>
 		</div>
 	</div>
-</div>
-
-</div><!--PROCESSING PAGE-->
-
+</div><!--/Processing Page-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																		<!--Distribution-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="distribution">
-	<div data-role="header">
-
+	<div data-role="header" data-position="fixed">
 		<h1>Distribution</h1>
-
 		<a data-rel="back" data-icon="back">Back</a>
 		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
@@ -2595,7 +2594,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 	<h3>Could you imagine what truck drivers go through?</h3>
 	<p class="center-img"><img src="pics/truck.jpeg" /></p>
 	<ul>
- 		<li> Truck drivers don't really get a lot of sleep. </li> 
+ 		<li>Truck drivers don't really get a lot of sleep. </li> 
  		<li>Truck drivers also earn a lot of money because they're distributing the product to different places. </li>
  		<li>They're really not at home because they spent most of their time traveling. </li>
 		<li>They also don't stop anywhere--all they do it travel non stop, and that's bad because they can die.</li>
@@ -2603,12 +2602,12 @@ For the record, there are 158 divs with the data-role="popup"-->
 </div>
 
 </div> <!--DISTRIBUTION PAGE-->
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																		<!--Retail-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="retail">
-	<div data-role="header">
-
+	<div data-role="header" data-position="fixed">
 		<h1>Retail</h1>
-
 		<a data-rel="back" data-icon="back">Back</a>
 		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
@@ -2640,18 +2639,18 @@ For the record, there are 158 divs with the data-role="popup"-->
 </div>
 	
 </div> <!--RETAIL PAGE-->	
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																		<!--Service-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div data-role="page" id="service"> 
-	<div data-role="header">
-
+	<div data-role="header" data-position="fixed">
 		<h1>Service</h1>
-
 		<a data-rel="back" data-icon="back">Back</a>
 		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
 	<div data-role="content">
-		<h3> Is Service Really Easy? </h3>
-		<p> You're a server at a fast food restaurant. You accidentally messed up the customers order. The customer starts raging. What do you do?</p>	
+		<h3>Is Service Really Easy? </h3>
+		<p>You're a server at a fast food restaurant. You accidentally messed up the customers order. The customer starts raging. What do you do?</p>	
 		<ul data-role="listview">
 			<li data-icon="false"> <a href="#answer-tellyourboss" data-rel="popup" data-transition="flip">Tell Your Boss</a></li>
 			<li data-icon="false"> <a href="#answer-rageback" data-rel="popup" data-transition="flip">Rage Back</a>  </li>
@@ -2682,7 +2681,7 @@ For the record, there are 158 divs with the data-role="popup"-->
 
 		<div data-role="popup" id="answer-stayquiet" class="ui-content">
 			<h3>Answer</h3>
-			<p>You keep the job, but feel disrespected and abused because you had no power to do anything, and if you did, you would've have suffered the consequences you didn't deserve </p>
+			<p>You keep the job, but feel disrespected and abused because you had no power to do anything, and if you did, you would've have suffered the consequences you didn't deserve</p>
 				<div class="ui-grid-b">
 					<div class="ui-block-a"></div>
 					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
