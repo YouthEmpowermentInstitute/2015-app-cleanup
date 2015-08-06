@@ -7,6 +7,17 @@
 	<link rel="stylesheet" href="stylesheets/custom.css" />
 	<script src="scripts/jquery-core.js"></script>
 	<script src="scripts/jquery-mobile.js"></script>
+<!--I wanted to have the popups appear a bit more neat, so after the first commit of this index,
+I used the regex string below. I'm pretty sure it will handle every case. You can always revert to the first commit
+For the record, there are 158 divs with the data-role="popup"-->
+<!--The string-->
+<!--
+[^<]*(<div\sdata-role="popup"\sid="[^"]*"\sclass="ui-content">\n)[^<]*(<h3>[^<]*</h3>\r)[^<]*(<p>[^<]*</p>\r)[^<]*(<div\sclass="ui-grid-b">\r)[^<]*(<div\sclass="ui-block-a"></div>\r)[^<]*(<div\sclass="ui-block-b"><a\shref="#"\sclass="ui-btn\sui-corner-all\sui-shadow"\sdata-rel="back">[^>]*</a></div>\r)[^<]*(<div\sclass="ui-block-c"></div>\r)[^<]*(</div>\r)[^<]*(</div>\r)
+-->
+<!--The Replacement Patter-->
+<!--
+\t\t\1\t\t\t\2\t\t\t\3\t\t\t\t\4\t\t\t\t\t\5\t\t\t\t\t\6\t\t\t\t\t\7\t\t\t\t\8\t\t\9\r
+-->
 </head>
 <body>
 <div data-role="page" id="app-homepage">	  
@@ -33,7 +44,7 @@
 	<div data-role="header" data-position="fixed">
 		<h1>Healthy Eating</h1>
 		<a data-rel="back" data-icon="back">Back</a>
-		<a href="#health-homepage" data-icon="home">Home</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
 	  
 		<div data-role="content">
@@ -62,7 +73,7 @@
 	<div data-role="header" data-position="fixed">
 		<h1> General Health </h1>
 		<a data-rel="back" data-icon="back">Back</a>
-		<a href="#health-homepage" data-icon="home">Home</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
 
 <div data-role="content">
@@ -90,47 +101,47 @@
       		<li><a href="#GAq1a4" data-rel="popup" data-transition="flip"><p class="noelipsis">D. It makes you smarter</p></a></li>
       </ul>
   </div>
-      
-      
+  
 		<div data-role="popup" id="1falseanswer1" class="ui-content">
-		<h3> That is Incorrect</h3>
-		<p> Being thinner does not make you healthier </p>
-			<div class="ui-grid-b">
-				<div class="ui-block-a"></div>
-				<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-				<div class="ui-block-c"></div>
-			</div>
+			<h3> That is Incorrect</h3>
+			<p> Being thinner does not make you healthier </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
 
 		<div data-role="popup" id="GAq1a2" class="ui-content">
-		<h3> This is Correct!</h3>
-		<p>  Healthy eating is the foundation of a healthy lifestyle  </p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-			<div class="ui-block-c"></div>
-		</div>
+			<h3> This is Correct!</h3>
+			<p>  Healthy eating is the foundation of a healthy lifestyle  </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
 
 		<div data-role="popup" id="GAq1a3" class="ui-content">
-		<h3> That is Incorrect</h3>
-		<p> Eating healthy dose not make a difference in your overall beauty </p>
-		<div class="ui-grid-b">
-		<div class="ui-block-a"></div>
-		<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-		<div class="ui-block-c"></div>
-		</div>
+			<h3> That is Incorrect</h3>
+			<p> Eating healthy dose not make a difference in your overall beauty </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
 
 		<div data-role="popup" id="GAq1a4" class="ui-content">
-		<h3> That is Incorrect</h3>
-		<p> It can only help you get smarter not become smarter automatically  </p>
-		<div class="ui-grid-b">
-		<div class="ui-block-a"></div>
-		<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-		<div class="ui-block-c"></div>
+			<h3> That is Incorrect</h3>
+			<p> It can only help you get smarter not become smarter automatically  </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-		</div>
+
 <!--/Question 1-->
       
 
@@ -143,47 +154,47 @@
 					<li><a href="#GAq2a4" data-rel="popup" data-transition="flip"> D. Organic food is grown with natural fertilizers and it is more nutritious while non-organic foods is grown using chemical fertilizes & harms health </a></li>
 				</ul>
 			</div>
-
-	
+			
 		<div data-role="popup" id="GAq2a1" class="ui-content">
-		<h3> That is Incorrect </h3>
-		<p> Organic foods do not contain any pesticides </p>
-		<div class="ui-grid-b">
-		<div class="ui-block-a"></div>
-		<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-		<div class="ui-block-c"></div>
-		</div>
+			<h3> That is Incorrect </h3>
+			<p> Organic foods do not contain any pesticides </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
 
 		<div data-role="popup" id="GAq2a2" class="ui-content">
-		<h3> That is Incorrect </h3>
-		<p> non-organic is still real food </p>
-		<div class="ui-grid-b">
-		<div class="ui-block-a"></div>
-		<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-		<div class="ui-block-c"></div>
-		</div>
+			<h3> That is Incorrect </h3>
+			<p> non-organic is still real food </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
 
 		<div data-role="popup" id="GAq2a3" class="ui-content">
-		<h3> That is Incorrect </h3>
-		<p> Organic food is expensive and non-organic is cheaper </p>
-		<div class="ui-grid-b">
-		<div class="ui-block-a"></div>
-		<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-		<div class="ui-block-c"></div>
-		</div>
+			<h3> That is Incorrect </h3>
+			<p> Organic food is expensive and non-organic is cheaper </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
 
 		<div data-role="popup" id="GAq2a4" class="ui-content">
-		<h3> That is Correct!</h3>
-		<p> Organic food have natural fertilizers and non-organic has pesticides  </p>
-		<div class="ui-grid-b">
-		<div class="ui-block-a"></div>
-		<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-		<div class="ui-block-c"></div>
+			<h3> That is Correct!</h3>
+			<p> Organic food have natural fertilizers and non-organic has pesticides  </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-		</div>
+
 
 <!--/Question 2-->
 
@@ -197,46 +208,46 @@
 			<li><a href="#GAq3a4" data-rel="popup" data-transition="flip"> D. 8 cups of water </a></li>
 		</ul>
 </div>
-		
-<div data-role="popup" id="GAq3a1" class="ui-content">
-<h3> That is Incorrect</h3>
-<p>   this is a little too much  </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq3a1" class="ui-content">
+			<h3> That is Incorrect</h3>
+			<p>   this is a little too much  </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-<div data-role="popup" id="GAq3a2" class="ui-content">
-<h3> That is Incorrect</h3>
-<p> your body needs to be hydrated everyday  </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq3a2" class="ui-content">
+			<h3> That is Incorrect</h3>
+			<p> your body needs to be hydrated everyday  </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-<div data-role="popup" id="GAq3a3" class="ui-content">
-<h3> That is Incorrect</h3>
-<p> this is a little  too much </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq3a3" class="ui-content">
+			<h3> That is Incorrect</h3>
+			<p> this is a little  too much </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-<div data-role="popup" id="GAq3a4" class="ui-content">
-<h3> That is Correct! </h3>
-<p> 8 cups of water is the right amount </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq3a4" class="ui-content">
+			<h3> That is Correct! </h3>
+			<p> 8 cups of water is the right amount </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 <!--/Question 3-->
 
 
@@ -249,46 +260,46 @@
             <li><a href="#GAq4a4" data-rel="popup" data-transition="flip"> D. It does not affect your health </a></li>
 		</ul>
 	</div>
-		
 		<div data-role="popup" id="GAq4a1" class="ui-content">
-<h3> That is Correct! </h3>
-<p> That is how nutritious foods impact health by functioning properly  </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+			<h3> That is Correct! </h3>
+			<p> That is how nutritious foods impact health by functioning properly  </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-<div data-role="popup" id="GAq4a2" class="ui-content">
-<h3> That is Incorrect</h3>
-<p> It dont not have anything in your bone structure, that come in your genes </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-		
+		<div data-role="popup" id="GAq4a2" class="ui-content">
+			<h3> That is Incorrect</h3>
+			<p> It dont not have anything in your bone structure, that come in your genes </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 		<div data-role="popup" id="GAq4a3" class="ui-content">
-<h3> That is Incorrect </h3>
-<p>  Healthy food dose not impact health only when you are in diet </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-		
+			<h3> That is Incorrect </h3>
+			<p>  Healthy food dose not impact health only when you are in diet </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 		<div data-role="popup" id="GAq4a4" class="ui-content">
-<h3> That is Incorrect  </h3>
-<p> It dose have an impact in you health </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+			<h3> That is Incorrect  </h3>
+			<p> It dose have an impact in you health </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 
 <!--/Question 4-->
 
@@ -302,46 +313,46 @@
 			<li><a href="#GAq5a4" data-rel="popup" data-transition="flip"> D. Sugar is actually helpful for those who burn alot of calories  </a></li>
        </ul>
       </div>
-       
-       <div data-role="popup" id="GAq5a1" class="ui-content">
-<h3> That is Incorrect </h3>
-<p> Not all sugars are harmful</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq5a1" class="ui-content">
+			<h3> That is Incorrect </h3>
+			<p> Not all sugars are harmful</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-<div data-role="popup" id="GAq5a2" class="ui-content">
-<h3> That is Incorrect </h3>
-<p> Sugar is not bad if you are lactose intolerant </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-		
+		<div data-role="popup" id="GAq5a2" class="ui-content">
+			<h3> That is Incorrect </h3>
+			<p> Sugar is not bad if you are lactose intolerant </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 		<div data-role="popup" id="GAq5a3" class="ui-content">
-<h3> That is Correct! </h3>
-<p> Sugar is good with moderation however, it harmful if you eat too much of it.  </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-		
+			<h3> That is Correct! </h3>
+			<p> Sugar is good with moderation however, it harmful if you eat too much of it.  </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 		<div data-role="popup" id="GAq5a4" class="ui-content">
-<h3>  That is Incorrect </h3>
-<p> It is actually so unhealthy </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+			<h3>  That is Incorrect </h3>
+			<p> It is actually so unhealthy </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 
 <!--/Question 5-->
 		
@@ -355,46 +366,46 @@
 			<li><a href="#GAq6a4" data-rel="popup" data-transition="flip">D. No, some fats are major source of energy </a></li>
 		</ul>
 	</div>
-		
 		<div data-role="popup" id="GAq6a1" class="ui-content">
-<h3> That is Incorrect  </h3>
-<p> Not all Fats lead to obesity </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+			<h3> That is Incorrect  </h3>
+			<p> Not all Fats lead to obesity </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-<div data-role="popup" id="GAq6a2" class="ui-content">
-<h3> That s Incorrect  </h3>
-<p> All fats are not found inn junk food some fats are very nutritional </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq6a2" class="ui-content">
+			<h3> That s Incorrect  </h3>
+			<p> All fats are not found inn junk food some fats are very nutritional </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-<div data-role="popup" id="GAq6a3" class="ui-content">
-<h3> That is Incorrect </h3>
-<p> Not all Fats ar ebad but also not all Fats are healthy</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq6a3" class="ui-content">
+			<h3> That is Incorrect </h3>
+			<p> Not all Fats ar ebad but also not all Fats are healthy</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-<div data-role="popup" id="GAq6a4" class="ui-content">
-<h3> That is Correct! </h3>
-<p> Some Fats are very helpful with having energy and they are not harmful</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq6a4" class="ui-content">
+			<h3> That is Correct! </h3>
+			<p> Some Fats are very helpful with having energy and they are not harmful</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 
 <!--/Question 6-->
 		
@@ -411,76 +422,76 @@
 			<li><a href="#GAq7a7" data-rel="popup" data-transition="flip">G. Nuts </a></li>
 		</ul>
 	</div>
+		<div data-role="popup" id="GAq7a1" class="ui-content">
+			<h3>  That is Correct!</h3>
+			<p> Oil is not an essential nutrient,it is not needed as much</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-<div data-role="popup" id="GAq7a1" class="ui-content">
-<h3>  That is Correct!</h3>
-<p> Oil is not an essential nutrient,it is not needed as much</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-		
 		<div data-role="popup" id="GAq7a2" class="ui-content">
-<h3> That is Incorrect! </h3>
-<p> Fats are needed </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+			<h3> That is Incorrect! </h3>
+			<p> Fats are needed </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-<div data-role="popup" id="GAq7a3" class="ui-content">
-<h3>  That is Incorrect!</h3>
-<p> Protein is very nutritious </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq7a3" class="ui-content">
+			<h3>  That is Incorrect!</h3>
+			<p> Protein is very nutritious </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-<div data-role="popup" id="GAq7a4" class="ui-content">
-<h3> That is Incorrect! </h3>
-<p> Carbs are an essential nutrient </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq7a4" class="ui-content">
+			<h3> That is Incorrect! </h3>
+			<p> Carbs are an essential nutrient </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-	<div data-role="popup" id="GAq7a5" class="ui-content">
-<h3> That is Incorrect  </h3>
-<p> Vitamins & Minerals are very important to our bodies </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq7a5" class="ui-content">
+			<h3> That is Incorrect  </h3>
+			<p> Vitamins & Minerals are very important to our bodies </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-<div data-role="popup" id="GAq7a6" class="ui-content">
-<h3>  That is Incorrect</h3>
-<p> Water is the most needed essential nutrient </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq7a6" class="ui-content">
+			<h3>  That is Incorrect</h3>
+			<p> Water is the most needed essential nutrient </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-      <div data-role="popup" id="GAq7a7" class="ui-content">
-<h3> That is Correct!</h3>
-<p> Nuts are not an essential nutrients </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq7a7" class="ui-content">
+			<h3> That is Correct!</h3>
+			<p> Nuts are not an essential nutrients </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 		
 <!--/Question 7-->
 
@@ -495,56 +506,56 @@
 			<li><a href="#GAq8a5" data-rel="popup" data-transition="flip">E. People cannot digest properly the two proteins of wheat and grain. Gluten is called a celiac disease because they can not digest. </a></li>
          </ul>
       </div>
-         
-          <div data-role="popup" id="GAq8a1" class="ui-content">
-<h3> That is Incorrect </h3>
-<p> People can not only eat goat milk if they are Gluten free</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-    
-          <div data-role="popup" id="GAq8a2" class="ui-content">
-<h3> That is Incorrect </h3>
-<p> That is not being Gluten free</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-         
-          <div data-role="popup" id="GAq8a3" class="ui-content">
-<h3> That is Incorrect</h3>
-<p> If you are Gluten free goat milk will not be helpful and that is not being Gluten free </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq8a1" class="ui-content">
+			<h3> That is Incorrect </h3>
+			<p> People can not only eat goat milk if they are Gluten free</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-          <div data-role="popup" id="GAq8a4" class="ui-content">
-<h3> That is Incorrect </h3>
-<p> That is not being Gluten free </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq8a2" class="ui-content">
+			<h3> That is Incorrect </h3>
+			<p> That is not being Gluten free</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
- <div data-role="popup" id="GAq8a5" class="ui-content">
-<h3> This is Correct! </h3>
-<p> Gluten free is not being able to digest the two proteins </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq8a3" class="ui-content">
+			<h3> That is Incorrect</h3>
+			<p> If you are Gluten free goat milk will not be helpful and that is not being Gluten free </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="GAq8a4" class="ui-content">
+			<h3> That is Incorrect </h3>
+			<p> That is not being Gluten free </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="GAq8a5" class="ui-content">
+			<h3> This is Correct! </h3>
+			<p> Gluten free is not being able to digest the two proteins </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 
 <!--/Question 8-->
 
@@ -558,46 +569,46 @@
 			<li><a href="#GAq9a4" data-rel="popup" data-transition="flip">D. GMO prevents dieses </a></li>
 		</ul>
 	</div>
-		
-<div data-role="popup" id="GAq9a1" class="ui-content">
-<h3> That is Incorrect</h3>
-<p>It actually dose the opposite</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq9a1" class="ui-content">
+			<h3> That is Incorrect</h3>
+			<p>It actually dose the opposite</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
- <div data-role="popup" id="GAq9a2" class="ui-content">
-<h3> That is Correct!</h3>
-<p> GMO cause illnesses </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq9a2" class="ui-content">
+			<h3> That is Correct!</h3>
+			<p> GMO cause illnesses </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
- <div data-role="popup" id="GAq9a4" class="ui-content">
-<h3> That is Incorrect</h3>
-<p> GMO dose the opposite of preventing dieses </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-		
-		 <div data-role="popup" id="GAq9a3" class="ui-content">
-<h3> That is Incorrect </h3>
-<p> GMO dose not increase any energy and has no control over your appearance </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq9a4" class="ui-content">
+			<h3> That is Incorrect</h3>
+			<p> GMO dose the opposite of preventing dieses </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="GAq9a3" class="ui-content">
+			<h3> That is Incorrect </h3>
+			<p> GMO dose not increase any energy and has no control over your appearance </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 		
 <!--/Question 9-->
 		
@@ -612,46 +623,46 @@
 			<li><a href="#GAq10a4" data-rel="popup" data-transition="flip"> D. Vegetarians eat all meats but not fish while Pescatarians eat everything but especially fish </a></li>
 	    </ul>
 	  </div>
-	  
-	     <div data-role="popup" id="GAq10a1" class="ui-content">
-<h3> This is Incorrect!  </h3>
-<p> Vegetarians do not eat any animal based products  </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq10a1" class="ui-content">
+			<h3> This is Incorrect!  </h3>
+			<p> Vegetarians do not eat any animal based products  </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
- <div data-role="popup" id="GAq10a2" class="ui-content">
-<h3> That is Incorrect</h3>
-<p> Vegetarians dont only eat meat and Pescatarians do eat fish  </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq10a2" class="ui-content">
+			<h3> That is Incorrect</h3>
+			<p> Vegetarians dont only eat meat and Pescatarians do eat fish  </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
- <div data-role="popup" id="GAq10a3" class="ui-content">
-<h3> That is Correct!  </h3>
-<p>  Vegetarians do not eat any type of meat and Pescatarians avoid  all meats  </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-	    
-	     <div data-role="popup" id="GAq10a4" class="ui-content">
-<h3> That is Incorrect </h3>
-<p> Vegatarians do not eat any meats </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq10a3" class="ui-content">
+			<h3> That is Correct!  </h3>
+			<p>  Vegetarians do not eat any type of meat and Pescatarians avoid  all meats  </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="GAq10a4" class="ui-content">
+			<h3> That is Incorrect </h3>
+			<p> Vegatarians do not eat any meats </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 	    
 <!--/Question 10-->
 	    
@@ -667,49 +678,46 @@
 			<li><a href="#GAq11a4" data-rel="popup" data-transition="flip">D. Purchasing healthier foods in the drive thru </a></li>
 	    </ul>
 	  </div>
-	    
-	    
-	    
-	     <div data-role="popup" id="GAq11a1" class="ui-content">
-<h3> That is Correct</h3>
-<p> Gardening, choosing local, Organic and avoiding GMOs.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-	    
-	    
-	     <div data-role="popup" id="GAq11a2" class="ui-content">
-<h3> That is Incorrect </h3>
-<p> That is not healthy eating </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq11a1" class="ui-content">
+			<h3> That is Correct</h3>
+			<p> Gardening, choosing local, Organic and avoiding GMOs.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
- <div data-role="popup" id="GAq11a3" class="ui-content">
-<h3> That is Incorrect</h3>
-<p> That is not healthy </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq11a2" class="ui-content">
+			<h3> That is Incorrect </h3>
+			<p> That is not healthy eating </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
- <div data-role="popup" id="GAq11a4" class="ui-content">
-<h3> That is Incorrect </h3>
-<p> That is not nutritions  </p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="GAq11a3" class="ui-content">
+			<h3> That is Incorrect</h3>
+			<p> That is not healthy </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="GAq11a4" class="ui-content">
+			<h3> That is Incorrect </h3>
+			<p> That is not nutritions  </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"> Got It </a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 
 <!--/Question 11-->
 </div><!--/Accordion -->
@@ -722,7 +730,7 @@
 	<div data-role="header" data-position="fixed">
 		<h1>Women's Health</h1>
 		<a data-rel="back" data-icon="back">Back</a>
-		<a href="#health-homepage" data-icon="home">Home</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
 <div data-role="content">
 
@@ -792,190 +800,206 @@
 </div><!--/Accordion-->
 
 <!--============="Answer" Div Popups===============-->
-<div data-role="popup" id="q1a1" class="ui-content">
-<h3>Incorrect!</h3>
-<p>You should be drinking water but it does not maintain energy throughout the day.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-<div data-role="popup" id="q1a2" class="ui-content">
-<h3>Incorrect!</h3>
-<p>It is not good for your body to eat and then go to bed.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got it!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-<div data-role="popup" id="q1a3" class="ui-content">
-<h3>Incorrect!</h3>
-<p>Exercising gets you more tired and you lose energy.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-<div data-role="popup" id="q1a4" class="ui-content">
-<h3>Correct!</h3>
-<p>This is the best way to maintain your energy.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="q1a1" class="ui-content">
+			<h3>Incorrect!</h3>
+			<p>You should be drinking water but it does not maintain energy throughout the day.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-<div data-role="popup" id="q2a1" class="ui-content">
-<h3>Incorrect!</h3>
-<p>You should be drinking water but it does not maintain energy throughout the day.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-<div data-role="popup" id="q2a2" class="ui-content">
-<h3>Correct!</h3>
-<p>It maybe better at replacing fluids than any kind of sports drinks. .</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got it!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-<div data-role="popup" id="q2a3" class="ui-content">
-<h3>Incorrect!</h3>
-<p>Exercising gets you more tired and you lose energy.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-<div data-role="popup" id="q2a4" class="ui-content">
-<h3>Incorrect!</h3>
-<p>This is the best way to maintain your energy.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="q1a2" class="ui-content">
+			<h3>Incorrect!</h3>
+			<p>It is not good for your body to eat and then go to bed.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got it!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-<div data-role="popup" id="q3a1" class="ui-content">
-<h3>Incorrect!</h3>
-<p> Eating blueberries doesn't make your nails grow.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-<div data-role="popup" id="q3a2" class="ui-content">
-<h3>Incorrect!</h3>
-<p> The color of blueberries (dark blue) stains your teeth.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got it!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-<div data-role="popup" id="q3a3" class="ui-content">
-<h3>Correct!</h3>
-<p>Berries are good for the heart because they are high in antioxidants and polyphenols.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-<div data-role="popup" id="q3a4" class="ui-content">
-<h3>Incorrect!</h3>
-<p>Blueberries help a lot of things in your body but it doesn't clear your skin..</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="q1a3" class="ui-content">
+			<h3>Incorrect!</h3>
+			<p>Exercising gets you more tired and you lose energy.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-<div data-role="popup" id="q4a1" class="ui-content">
-<h3>Correct!</h3>
-<p> Eating fruits and vegetables and high fibre food help prevent the disease.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-<div data-role="popup" id="q4a2" class="ui-content">
-<h3>Incorrect!</h3>
-<p>They say there are many as one-third of all cancer death.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got it!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-<div data-role="popup" id="q4a3" class="ui-content">
-<h3>Incorrect!</h3>
-<p>No you do not have to be a vegetarian to help cancer.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-<div data-role="popup" id="q4a4" class="ui-content">
-<h3>Incorrect!</h3>
-<p> Eating health makes it a low risk of it getting bad.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="q1a4" class="ui-content">
+			<h3>Correct!</h3>
+			<p>This is the best way to maintain your energy.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-<div data-role="popup" id="q5a1" class="ui-content">
-<h3>Incorrect!</h3>
-<p>If anything you could grow tall and strong.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-<div data-role="popup" id="q5a2" class="ui-content">
-<h3>Incorrect!</h3>
-<p>Everyone is different in body size/image.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got it!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-<div data-role="popup" id="q5a3" class="ui-content">
-<h3>Incorrect!</h3>
-<p>Everyone doesn't have to have the same body size.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
-<div data-role="popup" id="q5a4" class="ui-content">
-<h3>Correct!</h3>
-<p>Everyone has different body images, same people are thick, thin, short, tall, and etc.</p>
-<div class="ui-grid-b">
-<div class="ui-block-a"></div>
-<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-<div class="ui-block-c"></div>
-</div>
-</div>
+		<div data-role="popup" id="q2a1" class="ui-content">
+			<h3>Incorrect!</h3>
+			<p>You should be drinking water but it does not maintain energy throughout the day.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="q2a2" class="ui-content">
+			<h3>Correct!</h3>
+			<p>It maybe better at replacing fluids than any kind of sports drinks. .</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got it!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="q2a3" class="ui-content">
+			<h3>Incorrect!</h3>
+			<p>Exercising gets you more tired and you lose energy.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="q2a4" class="ui-content">
+			<h3>Incorrect!</h3>
+			<p>This is the best way to maintain your energy.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="q3a1" class="ui-content">
+			<h3>Incorrect!</h3>
+			<p> Eating blueberries doesn't make your nails grow.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="q3a2" class="ui-content">
+			<h3>Incorrect!</h3>
+			<p> The color of blueberries (dark blue) stains your teeth.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got it!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="q3a3" class="ui-content">
+			<h3>Correct!</h3>
+			<p>Berries are good for the heart because they are high in antioxidants and polyphenols.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="q3a4" class="ui-content">
+			<h3>Incorrect!</h3>
+			<p>Blueberries help a lot of things in your body but it doesn't clear your skin..</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="q4a1" class="ui-content">
+			<h3>Correct!</h3>
+			<p> Eating fruits and vegetables and high fibre food help prevent the disease.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="q4a2" class="ui-content">
+			<h3>Incorrect!</h3>
+			<p>They say there are many as one-third of all cancer death.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got it!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="q4a3" class="ui-content">
+			<h3>Incorrect!</h3>
+			<p>No you do not have to be a vegetarian to help cancer.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="q4a4" class="ui-content">
+			<h3>Incorrect!</h3>
+			<p> Eating health makes it a low risk of it getting bad.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="q5a1" class="ui-content">
+			<h3>Incorrect!</h3>
+			<p>If anything you could grow tall and strong.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="q5a2" class="ui-content">
+			<h3>Incorrect!</h3>
+			<p>Everyone is different in body size/image.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got it!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="q5a3" class="ui-content">
+			<h3>Incorrect!</h3>
+			<p>Everyone doesn't have to have the same body size.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="q5a4" class="ui-content">
+			<h3>Correct!</h3>
+			<p>Everyone has different body images, same people are thick, thin, short, tall, and etc.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 
 <!--============="End" Answer Div===============-->
 </div>
@@ -988,7 +1012,7 @@
 	<div data-role="header" data-position="fixed">
 		<h1> Men's Health</h1>
 		<a data-rel="back" data-icon="back">Back</a>
-		<a href="#health-homepage" data-icon="home">Home</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
 
 <div data-role="content">
@@ -1026,26 +1050,26 @@
 			<div class="ui-block-c"></div>
 		</div>
 	</div>			
-	
-	<div data-role="popup" id="MHq1a2" class="ui-content">
-		<h3>Try Again!</h3>
-		<p>We wish it was just 1 of each but that's certainly not enough.</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="MHq1a2" class="ui-content">
+			<h3>Try Again!</h3>
+			<p>We wish it was just 1 of each but that's certainly not enough.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-			
+
 		<div data-role="popup" id="MH1falseanswer3" class="ui-content">
-		<h3>Try Again</h3>
-		<p>Give it another try you're really close. Just a few servings off.</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+			<h3>Try Again</h3>
+			<p>Give it another try you're really close. Just a few servings off.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-		</div>
+
 		
 		<div data-role="popup" id="MH1trueanswer" class="ui-content">
 		<h3>Correct!</h3>
@@ -1068,35 +1092,36 @@
 				</ul>
 			</div>
 <!-- POP UPS FOR QUESTION 2 -->
-				<div data-role="popup" id="MH2falseanswer1" class="ui-content">
-		          <h3>Try Again!</h3>
-		          <p>Banana chips do count as part of the 5 a day.</p>
-		              <div class="ui-grid-b">
-			          <div class="ui-block-a"></div>
-			          <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			          <div class="ui-block-c"></div>
-		          </div>
-	              </div>
-	
-				<div data-role="popup" id="MH2falseanswer2" class="ui-content">
-		          <h3>Try Again!</h3>
-		          <p>tomatoes do count as part of the 5 a day.</p>
-		              <div class="ui-grid-b">
-			          <div class="ui-block-a"></div>
-			          <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			          <div class="ui-block-c"></div>
-		          </div>
-	              </div>
-				
-				<div data-role="popup" id="MH2trueanswer" class="ui-content">
-		          <h3>Correct!</h3>
-		          <p>Potatoes do not count because they are a starchy food.</p>
-		              <div class="ui-grid-b">
-			          <div class="ui-block-a"></div>
-			          <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			          <div class="ui-block-c"></div>
-		          </div>
-	              </div>
+		<div data-role="popup" id="MH2falseanswer1" class="ui-content">
+			<h3>Try Again!</h3>
+			<p>Banana chips do count as part of the 5 a day.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="MH2falseanswer2" class="ui-content">
+			<h3>Try Again!</h3>
+			<p>tomatoes do count as part of the 5 a day.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="MH2trueanswer" class="ui-content">
+			<h3>Correct!</h3>
+			<p>Potatoes do not count because they are a starchy food.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 				
 				<div data-role="popup" id="MH2falseanswer3" class="ui-content">
 		          <h3>Try Again!</h3>
@@ -1120,36 +1145,36 @@
 			</div>
 			
 <!-- question 3 pop ups -->
+		<div data-role="popup" id="MH3falseanswer1" class="ui-content">
+			<h3>Try Again!</h3>
+			<p>5 to 20% very close but it's not it.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-				<div data-role="popup" id="MH3falseanswer1" class="ui-content">
-		          <h3>Try Again!</h3>
-		          <p>5 to 20% very close but it's not it.</p>
-		              <div class="ui-grid-b">
-			          <div class="ui-block-a"></div>
-			          <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			          <div class="ui-block-c"></div>
-		          </div>
-	              </div>
-				  
-				 <div data-role="popup" id="MH3trueanswer" class="ui-content">
-		          <h3>Correct!</h3>
-		          <p>10% is the least they should be receiving.</p>
-		              <div class="ui-grid-b">
-			          <div class="ui-block-a"></div>
-			          <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			          <div class="ui-block-c"></div>
-		          </div>
-	              </div>
-				  
-				 <div data-role="popup" id="MH3falseanswer2" class="ui-content">
-		          <h3>Try Again!</h3>
-		          <p>You're super close give it another try.</p>
-		              <div class="ui-grid-b">
-			          <div class="ui-block-a"></div>
-			          <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			          <div class="ui-block-c"></div>
-		          </div>
-	              </div>
+		<div data-role="popup" id="MH3trueanswer" class="ui-content">
+			<h3>Correct!</h3>
+			<p>10% is the least they should be receiving.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="MH3falseanswer2" class="ui-content">
+			<h3>Try Again!</h3>
+			<p>You're super close give it another try.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 				  
 				 <div data-role="popup" id="MH3falseanswer3" class="ui-content">
 		          <h3>Try Again!</h3>
@@ -1171,36 +1196,36 @@
 					<li><a href="#MH4trueanswer" data-rel="popup" data-transition="flip"> must take multivitamins daily </a></li> <!-- Correct -->
 				</ul>
 			</div>
-			
-					<div data-role="popup" id="MH4falseanswer1" class="ui-content">
-		          <h3>Try Again!</h3>
-		          <p>Eating at least 5 servings of veggies a day will help your overall health.</p>
-		              <div class="ui-grid-b">
-			          <div class="ui-block-a"></div>
-			          <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			          <div class="ui-block-c"></div>
-		          </div>
-	              </div>
-				  
-					<div data-role="popup" id="MH4falseanswer2" class="ui-content">
-		          <h3>Try Again!</h3>
-		          <p>Eating healthy is definitely something that will help you stay healthy.</p>
-		              <div class="ui-grid-b">
-			          <div class="ui-block-a"></div>
-			          <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			          <div class="ui-block-c"></div>
-		          </div>
-	              </div>
-				  
-					<div data-role="popup" id="MH4falseanswer3" class="ui-content">
-		          <h3>Try Again!</h3>
-		          <p>Eating junk food may not be the best thing for you, but when eaten with moderation and a balanced diet it won't hurt.</p>
-		              <div class="ui-grid-b">
-			          <div class="ui-block-a"></div>
-			          <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			          <div class="ui-block-c"></div>
-		          </div>
-	              </div>
+		<div data-role="popup" id="MH4falseanswer1" class="ui-content">
+			<h3>Try Again!</h3>
+			<p>Eating at least 5 servings of veggies a day will help your overall health.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="MH4falseanswer2" class="ui-content">
+			<h3>Try Again!</h3>
+			<p>Eating healthy is definitely something that will help you stay healthy.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="MH4falseanswer3" class="ui-content">
+			<h3>Try Again!</h3>
+			<p>Eating junk food may not be the best thing for you, but when eaten with moderation and a balanced diet it won't hurt.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 				  
 					<div data-role="popup" id="MH4trueanswer" class="ui-content">
 		          <h3>Correct!</h3>
@@ -1227,36 +1252,36 @@
 
 	
 <!-- question 5 pop ups -->
+		<div data-role="popup" id="MH5falseanswer1" class="ui-content">
+			<h3>Try Again!</h3>
+			<p>Actually, some fats are very good for you, essential in fact.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-					<div data-role="popup" id="MH5falseanswer1" class="ui-content">
-		          <h3>Try Again!</h3>
-		          <p>Actually, some fats are very good for you, essential in fact.</p>
-		              <div class="ui-grid-b">
-			          <div class="ui-block-a"></div>
-			          <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			          <div class="ui-block-c"></div>
-		          </div>
-	              </div>
-				  
-					<div data-role="popup" id="MH5falseanswer2" class="ui-content">
-		          <h3>Try Again!</h3>
-		          <p>Certain sugars are very good for you and are a necessary part of your diet.</p>
-		              <div class="ui-grid-b">
-			          <div class="ui-block-a"></div>
-			          <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			          <div class="ui-block-c"></div>
-		          </div>
-	              </div>
-				  
-					<div data-role="popup" id="MH5falseanswer3" class="ui-content">
-		          <h3>Try Again!</h3>
-		          <p>Chocolate has many outstanding health benefits ranging from skin care to cardiovascular health. Keep in mind that in order for you to get these benefits you must stick with a chocolate containing at least 70% cacao.</p>
-		              <div class="ui-grid-b">
-			          <div class="ui-block-a"></div>
-			          <div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			          <div class="ui-block-c"></div>
-		          </div>
-	              </div>
+		<div data-role="popup" id="MH5falseanswer2" class="ui-content">
+			<h3>Try Again!</h3>
+			<p>Certain sugars are very good for you and are a necessary part of your diet.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="MH5falseanswer3" class="ui-content">
+			<h3>Try Again!</h3>
+			<p>Chocolate has many outstanding health benefits ranging from skin care to cardiovascular health. Keep in mind that in order for you to get these benefits you must stick with a chocolate containing at least 70% cacao.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 				  
 					<div data-role="popup" id="MH5trueanswer" class="ui-content">
 		          <h3>Correct!</h3>
@@ -1285,7 +1310,7 @@
 	<div data-role="header" data-position="fixed">
 		<h1>Growing Kids Health</h1>
 		<a data-rel="back" data-icon="back">Back</a>
-		<a href="#health-homepage" data-icon="home">Home</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
 
 <div data-role="content">
@@ -1357,213 +1382,213 @@
 
 		<!-- answer div popups-->
 	<!-- question 1 answers --> 	
-	<div data-role="popup" id="KH1trueanswer" class="ui-content">
-	<h3>Correct!</h3>
-		<p>In order to stay healthy all you need to eat is three cups of vegetables a day.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="KH1trueanswer" class="ui-content">
+			<h3>Correct!</h3>
+			<p>In order to stay healthy all you need to eat is three cups of vegetables a day.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-	
+
 		<div data-role="popup" id="KHq1a2" class="ui-content">
-	<h3>That is Incorrect</h3>
-		<p> You need more vegetables that 1 cup a day to be healthy</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+			<h3>That is Incorrect</h3>
+			<p> You need more vegetables that 1 cup a day to be healthy</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-	
-	
-	<div data-role="popup" id="KHq1a3" class="ui-content">
-	<h3>That is Incorrect</h3>
-		<p>Four cups of vegetables is to much per day.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+
+		<div data-role="popup" id="KHq1a3" class="ui-content">
+			<h3>That is Incorrect</h3>
+			<p>Four cups of vegetables is to much per day.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-	
-	<div data-role="popup" id="KHq1a4" class="ui-content">
-	<h3>That is Incorrect</h3>
-		<p>You need less than 10 cups of vegetables a day to acquire all nutrients needed to be healthy</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+
+		<div data-role="popup" id="KHq1a4" class="ui-content">
+			<h3>That is Incorrect</h3>
+			<p>You need less than 10 cups of vegetables a day to acquire all nutrients needed to be healthy</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 	
 <!--question 2 answers-->
+		<div data-role="popup" id="KHq2a1" class="ui-content">
+			<h3>That is Incorrect</h3>
+			<p>All three of these nutrients aren't as important to teen health.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
 
-	<div data-role="popup" id="KHq2a1" class="ui-content">
-	<h3>That is Incorrect</h3>
-		<p>All three of these nutrients aren't as important to teen health.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="KHq2a2" class="ui-content">
+			<h3>That is Incorrect</h3>
+			<p>Only one of these nutrients is important to teen health.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-	
-	<div data-role="popup" id="KHq2a2" class="ui-content">
-	<h3>That is Incorrect</h3>
-		<p>Only one of these nutrients is important to teen health.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+
+		<div data-role="popup" id="KHq2a3" class="ui-content">
+			<h3>Correct!</h3>
+			<p>Iron, vitamin D, and calcium are all very essential to a teen's health.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-	
-	<div data-role="popup" id="KHq2a3" class="ui-content">
-	<h3>Correct!</h3>
-		<p>Iron, vitamin D, and calcium are all very essential to a teen's health.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+
+		<div data-role="popup" id="KHq2a4" class="ui-content">
+			<h3>That is Incorrect</h3>
+			<p> Only one of these is essential to a teen's health.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-	
-	<div data-role="popup" id="KHq2a4" class="ui-content">
-	<h3>That is Incorrect</h3>
-		<p> Only one of these is essential to a teen's health.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
-		</div>
-	</div>
+
 	<!-- question 3 answers-->
-	
-	<div data-role="popup" id="KHq3a1" class="ui-content">
-	<h3>That is Incorrect</h3>
-		<p>A poor diet will not result in seizures, nor more energy.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="KHq3a1" class="ui-content">
+			<h3>That is Incorrect</h3>
+			<p>A poor diet will not result in seizures, nor more energy.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-	
-	<div data-role="popup" id="KHq3a2" class="ui-content">
-	<h3>Correct!</h3>
-		<p>Weight gain and high blood pressure are both very real risks for teens who have a poor diet.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+
+		<div data-role="popup" id="KHq3a2" class="ui-content">
+			<h3>Correct!</h3>
+			<p>Weight gain and high blood pressure are both very real risks for teens who have a poor diet.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-	
-	<div data-role="popup" id="KHq3a3" class="ui-content">
-	<h3>That is Incorrect</h3>
-		<p>Teens that have a poor diet will have bad concentration and are not likely to get heart attacks as teens.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+
+		<div data-role="popup" id="KHq3a3" class="ui-content">
+			<h3>That is Incorrect</h3>
+			<p>Teens that have a poor diet will have bad concentration and are not likely to get heart attacks as teens.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-	
-	<div data-role="popup" id="KHq3a4" class="ui-content">
-	<h3>That is Incorrect</h3>
-		<p>Teens with a poor diet will have consequences.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+
+		<div data-role="popup" id="KHq3a4" class="ui-content">
+			<h3>That is Incorrect</h3>
+			<p>Teens with a poor diet will have consequences.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 	
 	<!-- question 4 answers-->
-	
-	<div data-role="popup" id="KHq4a1" class="ui-content">
-	<h3>That is Incorrect</h3>
-		<p>Eating a lot of sugar is the opposite of eating healthy.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="KHq4a1" class="ui-content">
+			<h3>That is Incorrect</h3>
+			<p>Eating a lot of sugar is the opposite of eating healthy.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-	
-	<div data-role="popup" id="KHq4a2" class="ui-content">
-	<h3>That is Incorrect</h3>
-		<p>Skipping meals is bad for your health because you're missing out on nutrients you should be getting on a daily basis.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+
+		<div data-role="popup" id="KHq4a2" class="ui-content">
+			<h3>That is Incorrect</h3>
+			<p>Skipping meals is bad for your health because you're missing out on nutrients you should be getting on a daily basis.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-	
-	<div data-role="popup" id="KHq4a3" class="ui-content">
-	<h3>That is Incorrect</h3>
-		<p>By eating quickly you don't become full, so it can cause you to overeat.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+
+		<div data-role="popup" id="KHq4a3" class="ui-content">
+			<h3>That is Incorrect</h3>
+			<p>By eating quickly you don't become full, so it can cause you to overeat.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-	
-	<div data-role="popup" id="KHq4a4" class="ui-content">
-	<h3>Correct!</h3>
-		<p>Not skipping meals and eating three times a day is the best way to maintain your weight and stay healthy.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+
+		<div data-role="popup" id="KHq4a4" class="ui-content">
+			<h3>Correct!</h3>
+			<p>Not skipping meals and eating three times a day is the best way to maintain your weight and stay healthy.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 	<!--end question4 answers-->
 	<!--question 5 answers-->
-		
-	<div data-role="popup" id="KHq5a1" class="ui-content">
-	<h3>Correct!</h3>
-		<p>A balanced diet that consists of vegetables, fruits, and nutrients is the healthiest diet.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="KHq5a1" class="ui-content">
+			<h3>Correct!</h3>
+			<p>A balanced diet that consists of vegetables, fruits, and nutrients is the healthiest diet.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-			
-	<div data-role="popup" id="KHq5a2" class="ui-content">
-	<h3>That is Incorrect</h3>
-		<p>You should never have more sugar than anything.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+
+		<div data-role="popup" id="KHq5a2" class="ui-content">
+			<h3>That is Incorrect</h3>
+			<p>You should never have more sugar than anything.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-	
-	<div data-role="popup" id="KHq5a3" class="ui-content">
-	<h3>That is Incorrect</h3>
-		<p>Too many fats and carbohydrates is not the kind of diet a teen needs.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+
+		<div data-role="popup" id="KHq5a3" class="ui-content">
+			<h3>That is Incorrect</h3>
+			<p>Too many fats and carbohydrates is not the kind of diet a teen needs.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-	
+
 		<div data-role="popup" id="KHq5a4" class="ui-content">
-	<h3>That is Incorrect</h3>
-		<p>A teen's diet should be high in vegetables as well.</p>
-			<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+			<h3>That is Incorrect</h3>
+			<p>A teen's diet should be high in vegetables as well.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 	<!-- end question 5 answers-->
 	
 </div>
@@ -1577,7 +1602,7 @@
 	<div data-role="header" data-position="fixed">
 		<h1>Tips For You</h1>
 		<a data-rel="back" data-icon="back">Back</a>
-		<a href="#health-homepage" data-icon="home">Home</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
 
 <div data-role="content">
@@ -1657,44 +1682,46 @@
 				</ul>
 
 <!--POPUPS FOR QUESTION Ethical Consumption Page-->			
-<div data-role="popup" id="ec-false1" class="ui-content">
-		<h3>Actually that's not ethical consumption!</h3>
-		<p>Even our favorite foods can be unethically produced. For example the production may harm the environment, the producers may not pay the workers well or animals could be abused in the production.</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="ec-false1" class="ui-content">
+			<h3>Actually that's not ethical consumption!</h3>
+			<p>Even our favorite foods can be unethically produced. For example the production may harm the environment, the producers may not pay the workers well or animals could be abused in the production.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
 
-<div data-role="popup" id="ec-true" class="ui-content">
-		<h3>That's correct!</h3>
-		<p>That is the definition of ethical consumption!</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="ec-true" class="ui-content">
+			<h3>That's correct!</h3>
+			<p>That is the definition of ethical consumption!</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
 
-<div data-role="popup" id="ec-false2" class="ui-content">
-		<h3>Actually that's false!</h3>
-		<p>Even healthy foods can have unexpected consequences on the environment and society.</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="ec-false2" class="ui-content">
+			<h3>Actually that's false!</h3>
+			<p>Even healthy foods can have unexpected consequences on the environment and society.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-<div data-role="popup" id="ec-false3" class="ui-content">
-		<h3>Actually that's false!</h3>
-		<p>Buying food produced by workers who are paid a living wage is a very important part of ethical consumption, however it is not the only part. There are many other aspects to ethical consumption.</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+
+		<div data-role="popup" id="ec-false3" class="ui-content">
+			<h3>Actually that's false!</h3>
+			<p>Buying food produced by workers who are paid a living wage is a very important part of ethical consumption, however it is not the only part. There are many other aspects to ethical consumption.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 
 </div>
 </div><!--/Ethical Consumption-->
@@ -1775,15 +1802,16 @@
 			<div class="ui-block-c"></div>
 		</div>
 	</div>			
-	<div data-role="popup" id="e1falseanswer3" class="ui-content">
-		<h3>Actually, that is false!</h3>
-		<p>If anything, the industries are restricting our use, so there's more for them to use for their products.</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="e1falseanswer3" class="ui-content">
+			<h3>Actually, that is false!</h3>
+			<p>If anything, the industries are restricting our use, so there's more for them to use for their products.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 	<div data-role="popup" id="e1trueanswer" class="ui-content">
 		<h3>Correct!</h3>
 		<p> A loaf of bread requires about 240 gallons of water, a pound of cheese takes about 382 gallons, turkeys take about 160 gallons of water, and a pound of beef takes up 1,800 gallons.
@@ -1814,26 +1842,26 @@
 			<div class="ui-block-c"></div>
 		</div>
 	</div>					
-			
-			<div data-role="popup" id="1falseanswer2" class="ui-content">
-		<h3>that is incorrect</h3>
-		<p>fulse actually it is extreamly bad fish could go extinct if we keep going at this rate</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="1falseanswer2" class="ui-content">
+			<h3>that is incorrect</h3>
+			<p>fulse actually it is extreamly bad fish could go extinct if we keep going at this rate</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
 
-	<div data-role="popup" id="1falseanswer3" class="ui-content">
-		<h3>that is incorrect</h3>
-		<p>false mermaids are to smart</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="1falseanswer3" class="ui-content">
+			<h3>that is incorrect</h3>
+			<p>false mermaids are to smart</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 
 <!--POPUPS FOR QUESTION CO2-->			
 	<div data-role="popup" id="1false1" class="ui-content">
@@ -1854,15 +1882,16 @@
 			<div class="ui-block-c"></div>
 		</div>
 	</div>			
-	<div data-role="popup" id="1false3" class="ui-content">
-		<h3>Actually, that is false!</h3>
-		<p>The construction of factories normally involves the production of cement that produces CO2 </p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="1false3" class="ui-content">
+			<h3>Actually, that is false!</h3>
+			<p>The construction of factories normally involves the production of cement that produces CO2 </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 	<div data-role="popup" id="1true1" class="ui-content">
 		<h3>Correct!</h3>
 		<p>Since all of the past answers were correct, this is the right answer</p> 
@@ -1895,25 +1924,27 @@
 		</div>
 	</div>			
 			<!--POPUPS FOR choice 3-->			
-	<div data-role="popup" id="choice3" class="ui-content">
-		<h3>Actually, it's completely false!</h3>
-		<p> An ethically consumable product completely follows the guidelines of organic food, safe farms, and affordable products for everyone.</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="choice3" class="ui-content">
+			<h3>Actually, it's completely false!</h3>
+			<p> An ethically consumable product completely follows the guidelines of organic food, safe farms, and affordable products for everyone.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 			<!--POPUPS FOR choice 4-->			
-	<div data-role="popup" id="choice4" class="ui-content">
-		<h3>Double True!</h3>
-		<p> Both answers are right!</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="choice4" class="ui-content">
+			<h3>Double True!</h3>
+			<p> Both answers are right!</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 
 </div>
 </div>
@@ -1975,33 +2006,36 @@
 			
 	</div>
 <!-- pop ups for question 1 -->
-<div data-role="popup" id="2falseanswer1" class="ui-content">
-		<h3>Actually, that is true!</h3>
-		<p>Both chickens bred for egg laying and breast meat are the most abused animals there is. They are force fed unnatural feed to enhance their hormone growth for egg laying and overfed to fatten them up for more meat.</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="2falseanswer1" class="ui-content">
+			<h3>Actually, that is true!</h3>
+			<p>Both chickens bred for egg laying and breast meat are the most abused animals there is. They are force fed unnatural feed to enhance their hormone growth for egg laying and overfed to fatten them up for more meat.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-	<div data-role="popup" id="2falseanswer2" class="ui-content">
-		<h3>Actually, that is true!</h3>
-		<p>Pigs are naturally curious animals so they often want to roam around a lot. However, being confined in a small tight space restricts them from doing so, so they get frustrated. When pigs get frustrated they bite off their tails. Workers usally cut them off before this happens. </p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+
+		<div data-role="popup" id="2falseanswer2" class="ui-content">
+			<h3>Actually, that is true!</h3>
+			<p>Pigs are naturally curious animals so they often want to roam around a lot. However, being confined in a small tight space restricts them from doing so, so they get frustrated. When pigs get frustrated they bite off their tails. Workers usally cut them off before this happens. </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
-	<div data-role="popup" id="2falseanswer3" class="ui-content">
-		<h3>Actually, that's true!</h3>
-		<p>There are antibiotics found in cow meat because of how much they're given while they're alive. Antibiotics that are consumed make vaccinees harder to work efficiently. </p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+
+		<div data-role="popup" id="2falseanswer3" class="ui-content">
+			<h3>Actually, that's true!</h3>
+			<p>There are antibiotics found in cow meat because of how much they're given while they're alive. Antibiotics that are consumed make vaccinees harder to work efficiently. </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 	</div>
 <!--pop-ups for milk-->
 	<div data-role="popup" id="1false1" class="ui-content">
@@ -2023,16 +2057,16 @@
 			<div class="ui-block-c"></div>
 		</div>		
 		</div>
-	
-<div data-role="popup" id="1false3" class="ui-content">
-		<h3>Actually, that's not true!</h3>
-		<p>Milk is a great source of protein!</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="1false3" class="ui-content">
+			<h3>Actually, that's not true!</h3>
+			<p>Milk is a great source of protein!</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-		</div>
+
 <div data-role="popup" id="1true" class="ui-content">
 		<h3>That's it!</h3>
 		<p>There are anti-biotics from the cow in milk.</p>
@@ -2060,15 +2094,16 @@
 			<div class="ui-block-c"></div>
 		</div>
 	</div>			
-	<div data-role="popup" id="2false2" class="ui-content">
-		<h3>Actually, that is false!</h3>
-		<p>Lots of animals and plants are now GMOs so that they can produce more of something, make them produce something new, even to make their meat healthier </p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="2false2" class="ui-content">
+			<h3>Actually, that is false!</h3>
+			<p>Lots of animals and plants are now GMOs so that they can produce more of something, make them produce something new, even to make their meat healthier </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 <div data-role="popup" id="2false3" class="ui-content">
 		<h3>Actually that is false!</h3>
 		<p>This is not illegal but can cause a lot of problems for people who can become immune to the antibiotics </p> 
@@ -2079,36 +2114,39 @@
 				</div>
 			</div>		
 		<!--POPUPS FOR worst case-->			
-	<div data-role="popup" id="choicee1" class="ui-content">
-		<h3>Case 1. Seaboard Foods, Colorado 2015</h3>
-		<p> A case in Colorado of animal abuse was brought to the eye of the public when an undercover employee video footage was released. The footage showed workers beating pigs with wood planks to kill weak or dying piglets. The video also contained footage of the workers tazing and kicking pigs too heavy to sustain their own weight. This pork company was a supplier of pork meat to Walmart. </p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="choicee1" class="ui-content">
+			<h3>Case 1. Seaboard Foods, Colorado 2015</h3>
+			<p> A case in Colorado of animal abuse was brought to the eye of the public when an undercover employee video footage was released. The footage showed workers beating pigs with wood planks to kill weak or dying piglets. The video also contained footage of the workers tazing and kicking pigs too heavy to sustain their own weight. This pork company was a supplier of pork meat to Walmart. </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 	
 		<!--POPUPS FOR QUESTION 2-->			
-	<div data-role="popup" id="choicee2" class="ui-content">
-		<h3>Western Hog Exchange a company based out of Alberta </h3>
-		<p> Another disturbing case of animal abuse. The pigs at the farm were shown to be kept in a confined place so small they could barely stand.</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="choicee2" class="ui-content">
+			<h3>Western Hog Exchange a company based out of Alberta </h3>
+			<p> Another disturbing case of animal abuse. The pigs at the farm were shown to be kept in a confined place so small they could barely stand.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 		<!--POPUPS FOR QUESTION 1-->			
-	<div data-role="popup" id="choicee3" class="ui-content">
-		<h3>Tyson Pork Group, Oklahoma 2013</h3>
-		<p> Footage has also been released The Tyson Pork Group beating animals to death and cramming animals trailers for transportation.</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="choicee3" class="ui-content">
+			<h3>Tyson Pork Group, Oklahoma 2013</h3>
+			<p> Footage has also been released The Tyson Pork Group beating animals to death and cramming animals trailers for transportation.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 
 			<div data-role="collapsible-set">
 			<div data-role="collapsible" >
@@ -2180,15 +2218,16 @@
 			<div class="ui-block-c"></div>
 		</div>
 	</div>					
-	<div data-role="popup" id="1f2" class="ui-content">
-		<h3>that is false</h3>
-		<p>false salmon is genetically modified</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="1f2" class="ui-content">
+			<h3>that is false</h3>
+			<p>false salmon is genetically modified</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 	<div data-role="popup" id="1f3" class="ui-content">
 		<h3>that is incorrect</h3>
 		<p>false there are vitamins that are genetically modified</p>
@@ -2216,15 +2255,16 @@
 			<div class="ui-block-c"></div>
 		</div>
 	</div>			
-	<div data-role="popup" id="3false3" class="ui-content">
-		<h3>Actually, that is false!</h3>
-		<p>They have modified the pig to make the pork healthier</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="3false3" class="ui-content">
+			<h3>Actually, that is false!</h3>
+			<p>They have modified the pig to make the pork healthier</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
+
 	<div data-role="popup" id="3true1" class="ui-content">
 		<h3>That is correct!</h3>
 		<p>All of these plants and animals have had their original DNA mixed with another organism's</p> 
@@ -2413,7 +2453,7 @@
 </div><!--Production Page-->
 	
 <div data-role="page" id="catcalling-page-one">
-	<div data-role="header" data-add-back-btn="true">
+	<div data-role="header">
 		<h2> Catcalling </h2>
 	</div>
 	
@@ -2425,7 +2465,7 @@
 
 <div data-role="page" id="touchinginappropriately-page-one">
 
-	<div data-role="header" data-add-back-btn="true">
+	<div data-role="header">
 		 <h2> Touching Inappropriately </h2>
 	</div>
 	
@@ -2437,7 +2477,7 @@
 
 
 <div data-role="page" id="injuries-page-one">
-	<div data-role="header" data-add-back-btn="true">
+	<div data-role="header">
 		<h2> Injuries </h2>
 	</div>
 	
@@ -2452,10 +2492,13 @@
 
 
 <div data-role="page"id="processing">
-	
-<div data-role="header" data-add-back-btn="true">
-	<h1>Processing</h1>
-</div>
+	<div data-role="header">
+
+		<h1>Processing</h1>
+
+		<a data-rel="back" data-icon="back">Back</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
+	</div>
 	
 <div data-role="content">
 	<p class="center-img"><img src="pics/Food_Processing_Plant_Picture.jpg"/ alt="processing-page-one" height="200" width="330"></p>
@@ -2470,10 +2513,13 @@
 </div><!--PROCESSING PAGE-->
 
 <div data-role="page" id="distribution">
-	
-<div data-role="header" data-add-back-btn="true">
- 	<h1>Distribution</h1>
-</div>
+	<div data-role="header">
+
+		<h1>Distribution</h1>
+
+		<a data-rel="back" data-icon="back">Back</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
+	</div>
 
 <div data-role="content">
 	<h3>Could you imagine what truck drivers go through?</h3>
@@ -2489,10 +2535,13 @@
 </div> <!--DISTRIBUTION PAGE-->
 
 <div data-role="page" id="retail">
-	
-<div data-role="header" data-add-back-btn="true">
-    <h1>Retail</h1>
-</div>
+	<div data-role="header">
+
+		<h1>Retail</h1>
+
+		<a data-rel="back" data-icon="back">Back</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
+	</div>
 		 
 <div data-role="content">
 	<h3>How familiar are you with the nation's supermarket chains?</h3>
@@ -2515,7 +2564,7 @@
 
 <div data-role="collapsible" id="kroger" data-collapsed="true">
 	<h2>Publix</h2>
-	<p>In 2012 the Cowalation of Immokalee Farmworkers (CIW) conducted a 6 day hunger strike advocating for Publix to raise at least 1 cent per pound on the prices of their tomatoes in order to double tamatoe farmer's wages. However, Publix denied even speaking with them. 	</p>
+	<p>In 2012 the Coalation of Immokalee Farmworkers (CIW) conducted a 6 day hunger strike advocating for Publix to raise at least 1 cent per pound on the prices of their tomatoes in order to double tamatoe farmer's wages. However, Publix denied even speaking with them. 	</p>
 </div>
 
 </div>
@@ -2523,9 +2572,12 @@
 </div> <!--RETAIL PAGE-->	
 
 <div data-role="page" id="service"> 
+	<div data-role="header">
 
-	<div data-role="header" data-add-back-btn="true">
-			<h1>Service</h1>
+		<h1>Service</h1>
+
+		<a data-rel="back" data-icon="back">Back</a>
+		<a href="#app-homepage" data-icon="home">Home</a>
 	</div>
 	<div data-role="content">
 		<h3> Is Service Really Easy? </h3>
@@ -2538,35 +2590,36 @@
 
 	
 	<!--- Pop Up Answers for questions -->
-	<div data-role="popup" id="answer-tellyourboss" class="ui-content">
-		<h3>Answer</h3>
-		<p>Boss: "Customer is always right." Often servers are seen as not so much important and are sometimes mistreated because some customers are pretentious.</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
-			</div>
-	</div>
-
-	<div data-role="popup" id="answer-rageback" class="ui-content">
-		<h3>Answer</h3>
-		<p>Boss:"You're fired!!" It's natural to snap back or react to someone who is making you angry. Especially when a customer is being difficult.</p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
+		<div data-role="popup" id="answer-tellyourboss" class="ui-content">
+			<h3>Answer</h3>
+			<p>Boss: "Customer is always right." Often servers are seen as not so much important and are sometimes mistreated because some customers are pretentious.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
 		</div>
-	</div>
 
-	<div data-role="popup" id="answer-stayquiet" class="ui-content">
-		<h3>Answer</h3>
-		<p>You keep the job, but feel disrespected and abused because you had no power to do anything, and if you did, you would've have suffered the consequences you didn't deserve </p>
-		<div class="ui-grid-b">
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
-			<div class="ui-block-c"></div>
-	</div>
-	</div>
+		<div data-role="popup" id="answer-rageback" class="ui-content">
+			<h3>Answer</h3>
+			<p>Boss:"You're fired!!" It's natural to snap back or react to someone who is making you angry. Especially when a customer is being difficult.</p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
+		<div data-role="popup" id="answer-stayquiet" class="ui-content">
+			<h3>Answer</h3>
+			<p>You keep the job, but feel disrespected and abused because you had no power to do anything, and if you did, you would've have suffered the consequences you didn't deserve </p>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+		</div>
+
 	</div>
 </div><!--SERIVCE PAGE-->
 

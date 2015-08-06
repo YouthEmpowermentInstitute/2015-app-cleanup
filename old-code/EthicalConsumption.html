@@ -1,0 +1,645 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Ethical Consumption</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheets/style.css" />
+<link rel="stylesheet" href="stylesheets/custom.css" />
+<script src="scripts/jquery-core.js"></script>
+<script src="scripts/jquery-mobile.js"></script>
+</head>
+ 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																		<!--Ethical Homepage-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<div data-role="page" id="ec-homepage">
+<div data-role="header">
+<h1 style="text-align: center">Ethical Consumption</h1>
+</div>
+<div data-role="content">
+ 
+   <div style="text-align: center;"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Justice_for_the_Rossport_5.jpg" height="175" width="300"/></div> 
+
+	<div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#organic-food-page" class="ui-shadow ui-btn ui-corner-all">Organic Foods</a></div>
+	<div class="ui-block-b"><a href="#environment-page" class="ui-shadow ui-btn ui-corner-all">Environment</a></div>
+	<div class="ui-block-b"><a href="#animal-abuse-page" class="ui-shadow ui-btn ui-corner-all">Animal Cruelty</a></div>
+  <div class="ui-block-b"><a href="#resources-page" class="ui-shadow ui-btn ui-corner-all">Resources</a></div>
+</div>
+</div>
+
+
+	
+	<div class="ui-grid-solo">
+	<a href="#listview-and-popup" class="ui-link">
+	<div class="ui-block-a"><a href="#ethical-consumption" class="ui-btn ui-corner-all ui-shadow ui-btn-b">What Is Ethical Consumption?</a></div></div></a>
+
+	</div>
+
+</div><!--/Ethical Homepage-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																		<!--Ethical Consumptio-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div data-role="page" id="ethical-consumption">
+	<div data-role="header">
+		<h1>Ethical Consumption</h1>
+		<a data-rel="back" data-icon="back">Back</a>
+		<a href="#ec-homepage" data-icon="home">Home</a>
+	</div>
+	
+<div data-role="content">
+
+				<h3>What do you think ethical consumption is?</h3>	
+				<p>Select an answer below, if you don't know try your best guess.</p>
+				<ul data-role="listview" data-icon="false">
+					<li><a href="#ec-true" data-rel="popup" data-transition="flip">Consuming products and services produced in a way that minimises social and or environmental damage</a></li>
+					<li><a href="#ec-false1" data-rel="popup" data-transition="flip">Eating my favorite foods</a></li>
+					<li><a href="#ec-false2" data-rel="popup" data-transition="flip">Consuming only healthy foods</a></li>
+					<li><a href="#ec-false3" data-rel="popup" data-transition="flip">Buying food only produced by workers who are paid a living wage</a></li>
+				</ul>
+
+<!--POPUPS FOR QUESTION Ethical Consumption Page-->			
+<div data-role="popup" id="ec-false1" class="ui-content">
+		<h3>Actually that's not ethical consumption!</h3>
+		<p>Even our favorite foods can be unethically produced. For example the production may harm the environment, the producers may not pay the workers well or animals could be abused in the production.</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>
+
+<div data-role="popup" id="ec-true" class="ui-content">
+		<h3>That's correct!</h3>
+		<p>That is the definition of ethical consumption!</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>	
+
+<div data-role="popup" id="ec-false2" class="ui-content">
+		<h3>Actually that's false!</h3>
+		<p>Even healthy foods can have unexpected consequences on the environment and society.</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>
+<div data-role="popup" id="ec-false3" class="ui-content">
+		<h3>Actually that's false!</h3>
+		<p>Buying food produced by workers who are paid a living wage is a very important part of ethical consumption, however it is not the only part. There are many other aspects to ethical consumption.</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>
+
+</div>
+</div><!--/Ethical Consumption-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																		<!--Environmental Page-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div data-role="page" id="environment-page">
+	<div data-role="header">
+		<h1>Environment</h1>
+		<a data-rel="back" data-icon="back">Back</a>
+		<a href="#ec-homepage" data-icon="home">Home</a>
+	</div>
+	
+<div data-role="content">
+<div class="ui-body ui-body-a ui-corner-all">
+	<h3>How does the food chain affect the environment?</h3>
+		<div data-role="collapsibleset">
+			<div data-role="collapsible" >
+            <!-- start QUESTION ethical onsumption-envioment (enviroment) - How does the food industry affect the drought? - DONE BY kat -->
+				<h3>How does the food industry affect the drought?</h3>
+				<ul data-role="listview" data-icon="false">
+					<li><a href="#e1falseanswer1" data-rel="popup" data-transition="flip">Food industries use 1/3 of our water for their products. </a></li>
+					<li><a href="#e1falseanswer2" data-rel="popup" data-transition="flip">Peanuts, almonds, and walnuts use up the most water in the food industry. </a></li>
+					<li><a href="#e1falseanswer3" data-rel="popup" data-transition="flip">Our water usage is restricting the industries from using water on their products. </a></li>
+					<li><a href="#e1trueanswer" data-rel="popup" data-transition="flip">About 80% of water is used by the food industries. </a></li>
+				</ul>
+			</div>
+			<div data-role="collapsible" >
+				<h3>How does comercial over-fishing affect the ocean eco-system</h3>
+				<ul data-role="listview" data-icon="false">
+					<li><a href="#1falseanswer1" data-rel="popup" data-transition="flip"> nothing fishing is natural</a></li>
+					<li><a href="#1trueanswer1" data-rel="popup" data-transition="flip">it distroys the marine enviorment, it lessens bio diversity and polutes </a></li>
+					<li><a href="#1falseanswer2" data-rel="popup" data-transition="flip">it helps the marine enviorment </a></li>
+					<li><a href="#1falseanswer3" data-rel="popup" data-transition="flip">it kills all the mermaids</a></li>
+				</ul>
+			</div>
+			
+<!-- start QUESTION 1 ethical consumption-enviroment (enviroment) - How does the food industry produce CO2? - DONE BY jojo -->
+				<div data-role="collapsible" >
+				<h3>How does the food industry produce CO2?</h3>
+				<ul data-role="listview" data-icon="false">
+					<li><a href="#1false1" data-rel="popup" data-transition="flip">Agriculture distribution</a></li>
+					<li><a href="#1false2" data-rel="popup" data-transition="flip">Freezing poultry</a></li>
+					<li><a href="#1false3" data-rel="popup" data-transition="flip">Building factories</a></li>
+					<li><a href="#1true1" data-rel="popup" data-transition="flip">All of the above</a></li>
+				</ul>
+			</div>			
+<!-- START OF QUESTION-Ethical Consumption- Enviroment- What are negative aspects a consumer is supporting when purchasing products that are not considered the term ethically consumed?- 1 DONE BY Lydia -->
+			
+			<div data-role="collapsible" >	
+				<h3>What are negative aspects a consumer is supporting when purchasing products that are not considered the term ethically consumed? </h3>
+				<ul data-role="listview" data-icon="false">
+					<li><a href="#choice1" data-rel="popup" data-transition="flip">Cancer and diseases </a></li>
+					<li><a href="#choice2" data-rel="popup" data-transition="flip">Farms that abuse animals </a></li>
+					<li><a href="#choice3" data-rel="popup" data-transition="flip">Farms that grow organic food </a></li>
+					<li><a href="#choice4" data-rel="popup" data-transition="flip">Both A and B </a></li>
+				</ul>
+			</div>			
+		</div><!--/Accordion-->
+			
+			
+<!--POPUPS FOR QUESTION DROUGHT-->			
+	<div data-role="popup" id="e1falseanswer1" class="ui-content">
+		<h3>Actually, that is false!</h3>
+		<p>Food industries use about 2/3 of water.</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>			
+			<div data-role="popup" id="e1falseanswer2" class="ui-content">
+		<h3>Actually, that is false!</h3>
+		<p>Meat products use the most water in the food industry.</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>			
+	<div data-role="popup" id="e1falseanswer3" class="ui-content">
+		<h3>Actually, that is false!</h3>
+		<p>If anything, the industries are restricting our use, so there's more for them to use for their products.</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>	
+	<div data-role="popup" id="e1trueanswer" class="ui-content">
+		<h3>Correct!</h3>
+		<p> A loaf of bread requires about 240 gallons of water, a pound of cheese takes about 382 gallons, turkeys take about 160 gallons of water, and a pound of beef takes up 1,800 gallons.
+</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>				
+<!--POPUPS FOR question over-fishing-->			
+	<div data-role="popup" id="1falseanswer1" class="ui-content">
+		<h3>Actually, That's false</h3>
+		<p>false actually when you fish to much it messes with the other animals in the ocean</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>			
+	
+	<div data-role="popup" id="1trueanswer1" class="ui-content">
+		<h3>True!</h3>
+		<p>true because it has a ripple affecct on every living creature</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>					
+			
+			<div data-role="popup" id="1falseanswer2" class="ui-content">
+		<h3>that is incorrect</h3>
+		<p>fulse actually it is extreamly bad fish could go extinct if we keep going at this rate</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>
+
+	<div data-role="popup" id="1falseanswer3" class="ui-content">
+		<h3>that is incorrect</h3>
+		<p>false mermaids are to smart</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>
+
+<!--POPUPS FOR QUESTION CO2-->			
+	<div data-role="popup" id="1false1" class="ui-content">
+		<h3>Actually, that is false!</h3>
+		<p>Transporting food a long distance produces CO2 because of all of the trucks that are using fuel</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>			
+			<div data-role="popup" id="1false2" class="ui-content">
+		<h3>Actually, that is false!</h3>
+		<p>CO2 is also produced when we need to preserve boxed whole or pre-cut birds as dry ice pellets and other foods</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>			
+	<div data-role="popup" id="1false3" class="ui-content">
+		<h3>Actually, that is false!</h3>
+		<p>The construction of factories normally involves the production of cement that produces CO2 </p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>	
+	<div data-role="popup" id="1true1" class="ui-content">
+		<h3>Correct!</h3>
+		<p>Since all of the past answers were correct, this is the right answer</p> 
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>		
+
+
+			<!--POPUPS FOR choice 1-->			
+	<div data-role="popup" id="choice1" class="ui-content">
+		<h3>Actually, that's true!</h3>
+		<p> Yes. Cancer and deadly diseases are an outcome of buying non-organic products with gmo(genetically modified organism(s)), but is not the leading consequence of buying non-ethical consumer.</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>			
+			<!--POPUPS FOR choice 2-->			
+	<div data-role="popup" id="choice2" class="ui-content">
+		<h3>Actually, that's true.</h3>
+		<p> As a consumer, purchasing products that aren't considered ethically consumed, or products that don't follow guidelines to an efficient food chain , you are technically supporting the industry of farms that abuse animals and do not abide to an animal rights.</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>			
+			<!--POPUPS FOR choice 3-->			
+	<div data-role="popup" id="choice3" class="ui-content">
+		<h3>Actually, it's completely false!</h3>
+		<p> An ethically consumable product completely follows the guidelines of organic food, safe farms, and affordable products for everyone.</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>	
+			<!--POPUPS FOR choice 4-->			
+	<div data-role="popup" id="choice4" class="ui-content">
+		<h3>Double True!</h3>
+		<p> Both answers are right!</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>	
+
+</div>
+</div>
+</div><!--/Environment-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																		<!--Animal Abuse Page-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div data-role="page" id="animal-abuse-page">
+	<div data-role="header">
+
+		<h1>Animal Abuse</h1>
+
+		<a data-rel="back" data-icon="back">Back</a>
+		<a href="#ec-homepage" data-icon="home">Home</a>
+	</div>
+<!-- Question 1 --> 
+		<div data-role="collapsibleset">
+			<div data-role="collapsible">
+				<h3>Which of the following is false?</h3>
+				<ul data-role="listview" data-icon="false">
+					<li><a href="#2falseanswer1" data-rel="popup" data-transition="flip">Chickens are the most abused animal.</a></li>
+					<li><a href="#2falseanswer2" data-rel="popup" data-transition="flip">People cut off pigs' tails without using painkillers for when they get routy.</a></li>
+					<li><a href="#2trueanswer" data-rel="popup" data-transition="flip">Federal law states that animal abuse to livestock is illegal.</a></li>
+					<li><a href="#2falseanswer3" data-rel="popup" data-transition="flip">Since cows aren't fed by their natural diet and that they're kept in cramped spaces, workers give them antibiotics to keep from sickness.</a></li>
+				</ul>
+			</div>
+			
+<!-- start QUESTION animal -what is in your milk? DONE BY angelica -->
+			
+			<div data-role="collapsible" >	
+			<h3>what is not in your milk?</h3>
+				<ul data-role="listview" data-icon="false">
+					<li><a href="#1false1" data-rel="popup" data-transition="flip">Milk</a></li>
+					<li><a href="#1false2" data-rel="popup" data-transition="flip">puss</a></li>
+					<li><a href="#1false3" data-rel="popup" data-transition="flip">Protein</a></li>
+					<li><a href="#1true" data-rel="popup" data-transition="flip">no Anti-biotics</a></li>
+				</ul>
+			</div>			
+	<div data-role="collapsible" >
+			<!--start QUESTION 2 ethical consumption-enviroment (enviroment) - Which is illegal in the state California and is considered animal cruelty? - DONE BY jojo -->
+			<h3> Which is illegal in the state California and is considered animal cruelty?</h3>
+				<ul data-role="listview" data-icon="false">
+					<li><a href="#2false1" data-rel="popup" data-transition="flip">Force feeding animals</a></li>
+					<li><a href="#2true1" data-rel="popup" data-transition="flip">Plucking animals alive</a></li>
+					<li><a href="#2false2" data-rel="popup" data-transition="flip">Genetically modifying animals</a></li>
+					<li><a href="#2false3" data-rel="popup" data-transition="flip">Injecting antibiotics into animals</a></li>
+				</ul>	
+			</div>
+<!-- START OF QUESTION-Animal Cruelty- What are some of the most severe animal cruelty cases?- 1 DONE BY Lydia -->
+				<div data-role="collapsible-set">
+			<div data-role="collapsible" >
+				<h3>What are negative aspects a consumer is supporting when purchasing products that are not considered the term ethically consumed? </h3>
+				<ul data-role="listview" data-icon="false">
+					<li><a href="#choicee1" data-rel="popup" data-transition="flip">Seaboard Foods </a></li>
+					<li><a href="#choicee2" data-rel="popup" data-transition="flip">Western Hog Exchange </a></li>
+					<li><a href="#choicee3" data-rel="popup" data-transition="flip">Tyson Pork Group </a></li>
+				</ul>
+			</div>					
+			
+	</div>
+<!-- pop ups for question 1 -->
+<div data-role="popup" id="2falseanswer1" class="ui-content">
+		<h3>Actually, that is true!</h3>
+		<p>Both chickens bred for egg laying and breast meat are the most abused animals there is. They are force fed unnatural feed to enhance their hormone growth for egg laying and overfed to fatten them up for more meat.</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>
+	<div data-role="popup" id="2falseanswer2" class="ui-content">
+		<h3>Actually, that is true!</h3>
+		<p>Pigs are naturally curious animals so they often want to roam around a lot. However, being confined in a small tight space restricts them from doing so, so they get frustrated. When pigs get frustrated they bite off their tails. Workers usally cut them off before this happens. </p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>
+	<div data-role="popup" id="2falseanswer3" class="ui-content">
+		<h3>Actually, that's true!</h3>
+		<p>There are antibiotics found in cow meat because of how much they're given while they're alive. Antibiotics that are consumed make vaccinees harder to work efficiently. </p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>
+	</div>
+<!--pop-ups for milk-->
+	<div data-role="popup" id="1false1" class="ui-content">
+		<h3>Actually, that's incorrect!</h3>
+		<p>Milk is in milk of course!</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>		
+		</div>
+	
+	<div data-role="popup" id="1false2" class="ui-content">
+		<h3>Actually, that's not true!</h3>
+		<p>Puss is allowed in milk, the FDA regulates how much can puss can be in each quantity of milk though.</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>		
+		</div>
+	
+<div data-role="popup" id="1false3" class="ui-content">
+		<h3>Actually, that's not true!</h3>
+		<p>Milk is a great source of protein!</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+		</div>	
+<div data-role="popup" id="1true" class="ui-content">
+		<h3>That's it!</h3>
+		<p>There are anti-biotics from the cow in milk.</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+<!--POPUPS FOR QUESTION illegal in CA-->			
+	<div data-role="popup" id="2false1" class="ui-content">
+		<h3>Actually, that is false!</h3>
+		<p>There is no law against force feeding animals</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>			
+			<div data-role="popup" id="2true1" class="ui-content">
+		<h3>That is correct!</h3>
+		<p>In California animals that are sold in food markets, are not allowed to be dismembered, cut open, skinned, or plucked while they are still alive, yet it still happen</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>			
+	<div data-role="popup" id="2false2" class="ui-content">
+		<h3>Actually, that is false!</h3>
+		<p>Lots of animals and plants are now GMOs so that they can produce more of something, make them produce something new, even to make their meat healthier </p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>	
+<div data-role="popup" id="2false3" class="ui-content">
+		<h3>Actually that is false!</h3>
+		<p>This is not illegal but can cause a lot of problems for people who can become immune to the antibiotics </p> 
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+				</div>
+			</div>		
+		<!--POPUPS FOR worst case-->			
+	<div data-role="popup" id="choicee1" class="ui-content">
+		<h3>Case 1. Seaboard Foods, Colorado 2015</h3>
+		<p> A case in Colorado of animal abuse was brought to the eye of the public when an undercover employee video footage was released. The footage showed workers beating pigs with wood planks to kill weak or dying piglets. The video also contained footage of the workers tazing and kicking pigs too heavy to sustain their own weight. This pork company was a supplier of pork meat to Walmart. </p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>	
+	
+		<!--POPUPS FOR QUESTION 2-->			
+	<div data-role="popup" id="choicee2" class="ui-content">
+		<h3>Western Hog Exchange a company based out of Alberta </h3>
+		<p> Another disturbing case of animal abuse. The pigs at the farm were shown to be kept in a confined place so small they could barely stand.</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>	
+		<!--POPUPS FOR QUESTION 1-->			
+	<div data-role="popup" id="choicee3" class="ui-content">
+		<h3>Tyson Pork Group, Oklahoma 2013</h3>
+		<p> Footage has also been released The Tyson Pork Group beating animals to death and cramming animals trailers for transportation.</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>	
+
+			<div data-role="collapsible-set">
+			<div data-role="collapsible" >
+				<h3>How do pesticides affect the enviroment? </h3>
+				<ul data-role="listview" data-icon="false">
+					<li><a href="#choiceee1" data-rel="popup" data-transition="flip">Fact #1 </a></li>
+					<li><a href="#choiceee2" data-rel="popup" data-transition="flip">Fact #2 </a></li>
+					<li><a href="#choiceee3" data-rel="popup" data-transition="flip">Fact #3 </a></li>
+				</ul>
+			</div>
+</div>
+	</div>
+</div><!--/Animal Abuse-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+																		<!--Organic Food-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div data-role="page" id="organic-food-page">
+	<div data-role="header">
+		<h1>Organic Food</h1>
+		<a data-rel="back" data-icon="back">Back</a>
+		<a href="#ec-homepage" data-icon="home">Home</a>
+	</div>
+	
+<div data-role="content">
+<div data-role="collapsibleset" >
+	
+	<div data-role="collapsible" >	
+		<h3>how many foods are genetically modified?</h3>
+				<ul data-role="listview" data-icon="false">
+					<li><a href="#1f1" data-rel="popup" data-transition="flip">fruits arnt genetically modified</a></li>
+					<li><a href="#1t1" data-rel="popup" data-transition="flip">are wheats, grain, corn, other fruits and vegstibals genetically modified</a></li>
+					<li><a href="#1f2" data-rel="popup" data-transition="flip">fish cant be genetically modified</a></li>
+					<li><a href="#1f3" data-rel="popup" data-transition="flip">all vitamins are organic</a></li>
+				</ul>
+			</div>
+		
+			<!--start QUESTION 3 ethical consumption-GMOs (GMOs) - Which of the following answers is a  real genetically modified fruit or animal? - DONE BY jojo-->
+			<div data-role="collapsible" >
+		<h3>Which of the following answers is a  real genetically modified fruit or animal?</h3>
+
+			<ul data-role="listview" data-icon="false">
+					<li><a href="#3false1" data-rel="popup" data-transition="flip">Tomato with fish genes </a></li>
+					<li><a href="#3false2" data-rel="popup" data-transition="flip">Goat with spider genes</a></li>
+					<li><a href="#3false3" data-rel="popup" data-transition="flip">Pig with spinach genes</a></li>
+					<li><a href="#3true1" data-rel="popup" data-transition="flip">All of the above</a></li>
+				</ul>
+					</div>			
+			
+			
+</div>
+
+<!--Popups for organic food-->
+<!--POPUPS FOR question how many are GMO-->			
+	<div data-role="popup" id="1f1" class="ui-content">
+		<h3>Actually, That's false</h3>
+		<p>false alot of fruit are genetacly modified like tomatos</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>			
+	<div data-role="popup" id="1t1" class="ui-content">
+		<h3>True!</h3>
+		<p> that is correct many vegstibals and fruits are genetacly modified infact most are</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>					
+	<div data-role="popup" id="1f2" class="ui-content">
+		<h3>that is false</h3>
+		<p>false salmon is genetically modified</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>
+	<div data-role="popup" id="1f3" class="ui-content">
+		<h3>that is incorrect</h3>
+		<p>false there are vitamins that are genetically modified</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>		
+	<div data-role="popup" id="3false1" class="ui-content">
+		<h3>Actually, that is false!</h3>
+		<p>By combining fish genes with tomato so that they have a longer shelf life</p>
+	<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>				
+	<div data-role="popup" id="3false2" class="ui-content">
+		<h3>Actually, that is false</h3>
+	<p>This GMO was made so that a goat would be able to produce spider silk</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>			
+	<div data-role="popup" id="3false3" class="ui-content">
+		<h3>Actually, that is false!</h3>
+		<p>They have modified the pig to make the pork healthier</p>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+		</div>	
+	</div>	
+	<div data-role="popup" id="3true1" class="ui-content">
+		<h3>That is correct!</h3>
+		<p>All of these plants and animals have had their original DNA mixed with another organism's</p> 
+		<div class="ui-grid-b">
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back">Got It!</a></div>
+			<div class="ui-block-c"></div>
+				</div>
+</div>
+
+</div>
+</div><!--/Organic Food-->
+
+</body>
+</html>

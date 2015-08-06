@@ -8,7 +8,13 @@
     white-space: normal !important;
 }
 
+.ui-popup-container {
+width:90%;
+text-align:center;
+}	
+
 /*These make the text in listviews and collapsible
 toggles wrap instead of generating elipsis*/
+/*Found here https://stackoverflow.com/questions/12274467/wrapping-collapsible-in-jquery-mobile/24937104#24937104*/
 h3 .ui-btn{white-space:normal !important;}
 li .ui-btn{white-space:normal !important;}
